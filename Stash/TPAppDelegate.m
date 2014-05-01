@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.ideaController = [TPIdeaController new];
+  self.ideaController = [[TPIdeaController alloc] initWithArchive];
   
   return YES;
 }

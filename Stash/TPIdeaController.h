@@ -13,4 +13,7 @@
 @property (strong, nonatomic) NSMutableArray *ideas;
 @property (strong, nonatomic) TPIdea *pendingIdea;
 
+-(instancetype)initWithArchive;
+- (void)saveIdeas;
+
 @end

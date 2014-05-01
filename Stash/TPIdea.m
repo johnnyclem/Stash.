@@ -10,6 +10,33 @@
 
 @implementation TPIdea
 
+-(instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+  self = [super init];
+  if (self)
+  {
+    self.categoryIcon = [UIImage imageWithData:self.imageData];
+
+    self.imageData = [aDecoder decodeObjectForKey:@"imageData"];
+    self.workingTitle = [aDecoder decodeObjectForKey:@"workingTitle"];
+    self.appDescription = [aDecoder decodeObjectForKey:@"appDescription"];
+  }
+  
+  return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+  self.imageData = UIImagePNGRepresentation(self.categoryIcon);
+  
+  [aCoder encodeObject:self.workingTitle forKey:@"workingTitle"];
+  [aCoder encodeObject:self.imageData forKey:@"imageData"];
+  [aCoder encodeObject:self.categoryIcon forKey:@"categoryIcon"];
+  [aCoder encodeObject:self.appDescription forKey:@"appDescription"];
+}
+
+
+
 
 
 @end

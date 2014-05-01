@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TPIdea : NSObject
+@interface TPIdea : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *workingTitle;
 @property (strong, nonatomic) UIImage *categoryIcon;
 @property (strong, nonatomic) NSString *appDescription;
+@property (strong, nonatomic) NSData *imageData;
 
 @end
