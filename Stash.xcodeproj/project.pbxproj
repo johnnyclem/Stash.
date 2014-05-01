@@ -24,7 +24,6 @@
 		D7DFA68A19117FD2001AE811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66C19117FD2001AE811 /* UIKit.framework */; };
 		D7DFA69219117FD2001AE811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7DFA69019117FD2001AE811 /* InfoPlist.strings */; };
 		D7DFA69419117FD2001AE811 /* StashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DFA69319117FD2001AE811 /* StashTests.m */; };
-		D7ECF5A91912AC0800FF7DE6 /* TPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5A81912AC0800FF7DE6 /* TPNavigationController.m */; };
 		D7ECF5AC1912ADB700FF7DE6 /* TPIdea.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5AB1912ADB700FF7DE6 /* TPIdea.m */; };
 		D7ECF5B51912B29100FF7DE6 /* TPCategorySelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5B41912B29100FF7DE6 /* TPCategorySelectionVC.m */; };
 		D7ECF5B81912B29F00FF7DE6 /* TPAddIdeaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5B71912B29F00FF7DE6 /* TPAddIdeaVC.m */; };
@@ -102,8 +101,6 @@
 		D7DFA68F19117FD2001AE811 /* StashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StashTests-Info.plist"; sourceTree = "<group>"; };
 		D7DFA69119117FD2001AE811 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7DFA69319117FD2001AE811 /* StashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StashTests.m; sourceTree = "<group>"; };
-		D7ECF5A71912AC0800FF7DE6 /* TPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNavigationController.h; sourceTree = "<group>"; };
-		D7ECF5A81912AC0800FF7DE6 /* TPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPNavigationController.m; sourceTree = "<group>"; };
 		D7ECF5AA1912ADB700FF7DE6 /* TPIdea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPIdea.h; sourceTree = "<group>"; };
 		D7ECF5AB1912ADB700FF7DE6 /* TPIdea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPIdea.m; sourceTree = "<group>"; };
 		D7ECF5B31912B29100FF7DE6 /* TPCategorySelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCategorySelectionVC.h; sourceTree = "<group>"; };
@@ -263,8 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				D7DFA67A19117FD2001AE811 /* Main.storyboard */,
-				D7ECF5A71912AC0800FF7DE6 /* TPNavigationController.h */,
-				D7ECF5A81912AC0800FF7DE6 /* TPNavigationController.m */,
 				D7DFA67D19117FD2001AE811 /* TPViewController.h */,
 				D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */,
 				D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */,
@@ -557,7 +552,6 @@
 				D712B7691912FDC20063B45B /* TPBrowseIdeasCell.m in Sources */,
 				D7DFA67919117FD2001AE811 /* TPAppDelegate.m in Sources */,
 				D7ECF5B51912B29100FF7DE6 /* TPCategorySelectionVC.m in Sources */,
-				D7ECF5A91912AC0800FF7DE6 /* TPNavigationController.m in Sources */,
 				D7F0073A1911EC1100EB0C62 /* SWParallaxScrollView.mm in Sources */,
 				D7DFA67519117FD2001AE811 /* main.m in Sources */,
 			);

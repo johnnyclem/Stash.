@@ -7,11 +7,13 @@
 //
 
 #import "TPBrowseIdeasVC.h"
+#import "TPBrowseIdeasCell.h"
 #import "TPAppDelegate.h"
 
 @interface TPBrowseIdeasVC ()
-@property (weak, nonatomic) IBOutlet UILabel *countOfIdeasArray;
+
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -29,13 +31,37 @@
                                            selector:@selector(updateListOfIdeas)
                                                name:@"UpdateBrowseScreen"
                                              object:nil];
+  
 }
 
 
 -(void)updateListOfIdeas
 {
-  self.countOfIdeasArray.text = [NSString stringWithFormat:@"%lu", (unsigned long)[self.ideaController.ideas count]];
-  NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);
+  [self.collectionView reloadData];
+}
+
+#pragma mark - CollectionView DataSource/Delegate
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+  return self.ideaController.ideas.count;
+}
+
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+  
+  TPBrowseIdeasCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+  TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
+  //  TPIdea *idea = [self.modelController.ideas objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] lastObject] row]];
+  
+  cell.iconImage.image = idea.categoryIcon;
+  NSLog(@"%@", cell.iconImage.image);
+  
+  
+  return cell;
+  
 }
 
 @end
