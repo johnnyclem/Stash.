@@ -7,8 +7,12 @@
 //
 
 #import "TPViewController.h"
+#import "SWParallaxScrollView.h"
 
-@interface TPViewController ()
+@interface TPViewController () <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *parallaxImageView;
+@property (nonatomic, weak) IBOutlet SWParallaxScrollView *scrollView;
 
 @end
 
@@ -16,14 +20,36 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+
+  UIImage *back = [UIImage imageNamed: @"SuperViewBG"];
+  
+  CGSize tileSize = back.size;
+  CGRect tileFrame = CGRectMake(0, 0, 5 * self.view.bounds.size.width, tileSize.height );
+  
+  UIImageView *bgTile = [[UIImageView alloc] initWithImage: back];
+  bgTile.frame = tileFrame;
+  [_scrollView addSubview:bgTile onLayer: -1];
+  
+  _scrollView.contentSize = CGSizeMake( 5 * self.view.bounds.size.width, tileSize.height );
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollToNewIdeaScreen) name:@"scrollToNewIdea" object:nil];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  
+  [super viewDidAppear:animated];
+//  [_scrollView setContentSize:CGSizeMake(1600, 568)];
+
 }
 
+
+- (void)scrollToNewIdeaScreen
+{
+  CGFloat width = CGRectGetWidth(self.view.frame);
+  CGFloat height = CGRectGetHeight(self.view.frame);
+  
+  [_scrollView scrollRectToVisible:CGRectMake(width*3, 0, width, height) animated:YES];
+}
 @end

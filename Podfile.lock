@@ -1,0 +1,13 @@
+PODS:
+  - RaptureXML (1.0.1)
+  - UIImage+SVG (0.1):
+    - RaptureXML (~> 1.0.1)
+
+DEPENDENCIES:
+  - UIImage+SVG (~> 0.1)
+
+SPEC CHECKSUMS:
+  RaptureXML: ef017fda62eb95c60300108366d1f0cd0c28cbd4
+  UIImage+SVG: 17986d35ced3cc203b2c65eb0d3b6e1434f03123
+
+COCOAPODS: 0.32.1

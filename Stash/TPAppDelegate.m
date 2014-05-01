@@ -7,13 +7,13 @@
 //
 
 #import "TPAppDelegate.h"
+#import "TPViewController.h"
 
 @implementation TPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+  return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
