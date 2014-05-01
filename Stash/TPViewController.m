@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
 
   
   /* Code to handle initial background/parallax view */
@@ -33,7 +34,9 @@
   [_scrollView addSubview:bgTile onLayer: -1];
   
   _scrollView.contentSize = CGSizeMake( 5 * self.view.bounds.size.width, tileSize.height );
-  
+
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
+
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(scrollRight)
                                                name:@"moveRight"
@@ -49,15 +52,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
   
-  /*Shitty way of getting the app to start from the 3rd position but it works*/
-  
   [super viewDidAppear:animated];
-//  CGFloat width = CGRectGetWidth(self.view.frame);
-//  CGFloat height = CGRectGetHeight(self.view.frame);
-//  NSLog(@" %@",NSStringFromCGRect(_scrollView.bounds));
-//  [_scrollView scrollRectToVisible:CGRectMake(width *2, 0, width, height) animated:YES];
-//  NSLog(@" %@",NSStringFromCGRect(_scrollView.bounds));
-  
+
   [self scrolltoHome];
 }
 
@@ -68,7 +64,6 @@
   CGFloat height = CGRectGetHeight(self.view.frame);
   
   [_scrollView scrollRectToVisible:CGRectMake(width *2, 0, width, height) animated:YES];
-  
   NSLog(@" %@",NSStringFromCGRect(_scrollView.bounds));
   
 

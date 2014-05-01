@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5CA395550405474CB8773050 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABA92A0C3AE4A6BBA37FEDF /* libPods.a */; };
+		D712B7661912E5780063B45B /* TPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7651912E5780063B45B /* TPHomeVC.m */; };
+		D712B7691912FDC20063B45B /* TPBrowseIdeasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */; };
 		D7DFA66919117FD2001AE811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66819117FD2001AE811 /* Foundation.framework */; };
 		D7DFA66B19117FD2001AE811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66A19117FD2001AE811 /* CoreGraphics.framework */; };
 		D7DFA66D19117FD2001AE811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66C19117FD2001AE811 /* UIKit.framework */; };
@@ -77,6 +79,10 @@
 /* Begin PBXFileReference section */
 		5DA3F53528254B0FBE8B69AB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6ABA92A0C3AE4A6BBA37FEDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D712B7641912E5780063B45B /* TPHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPHomeVC.h; sourceTree = "<group>"; };
+		D712B7651912E5780063B45B /* TPHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPHomeVC.m; sourceTree = "<group>"; };
+		D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBrowseIdeasCell.h; sourceTree = "<group>"; };
+		D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBrowseIdeasCell.m; sourceTree = "<group>"; };
 		D7DFA66519117FD2001AE811 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DFA66819117FD2001AE811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7DFA66A19117FD2001AE811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -260,6 +266,8 @@
 				D7ECF5A71912AC0800FF7DE6 /* TPNavigationController.h */,
 				D7ECF5A81912AC0800FF7DE6 /* TPNavigationController.m */,
 				D7DFA67D19117FD2001AE811 /* TPViewController.h */,
+				D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */,
+				D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */,
 				D7DFA67E19117FD2001AE811 /* TPViewController.m */,
 			);
 			name = View;
@@ -285,6 +293,8 @@
 				D7ECF5B41912B29100FF7DE6 /* TPCategorySelectionVC.m */,
 				D7ECF5B61912B29F00FF7DE6 /* TPAddIdeaVC.h */,
 				D7ECF5B71912B29F00FF7DE6 /* TPAddIdeaVC.m */,
+				D712B7641912E5780063B45B /* TPHomeVC.h */,
+				D712B7651912E5780063B45B /* TPHomeVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -542,7 +552,9 @@
 				D7ECF5C01912CE3200FF7DE6 /* TPBrowseIdeasVC.m in Sources */,
 				D7ECF5AC1912ADB700FF7DE6 /* TPIdea.m in Sources */,
 				D7ECF5B81912B29F00FF7DE6 /* TPAddIdeaVC.m in Sources */,
+				D712B7661912E5780063B45B /* TPHomeVC.m in Sources */,
 				D7DFA67F19117FD2001AE811 /* TPViewController.m in Sources */,
+				D712B7691912FDC20063B45B /* TPBrowseIdeasCell.m in Sources */,
 				D7DFA67919117FD2001AE811 /* TPAppDelegate.m in Sources */,
 				D7ECF5B51912B29100FF7DE6 /* TPCategorySelectionVC.m in Sources */,
 				D7ECF5A91912AC0800FF7DE6 /* TPNavigationController.m in Sources */,

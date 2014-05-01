@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "TPIdeaController.h"
 
-
 @interface TPBrowseIdeasVC : UIViewController
 @property (nonatomic, weak) TPIdeaController *ideaController;
 

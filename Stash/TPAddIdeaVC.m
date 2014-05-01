@@ -30,19 +30,14 @@
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
+  
+  
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(prepareForOnScreen)
                                                name:@"categorySelected"
                                              object:nil];
 
 
-}
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-  [super viewWillAppear:animated];
-  NSLog(@" view will appear");
 }
 
 
@@ -54,14 +49,19 @@
 
 - (IBAction)goHome:(id)sender {
  
-  TPIdea *idea = [TPIdea new];
-  idea.workingTitle = self.workingTitle.text;
-  idea.appDescription = self.appDescription.text;
-  self.ideaController.pendingIdea = idea;
-  [self.ideaController.ideas addObject:idea];
+
+  self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
+  self.ideaController.pendingIdea.appDescription = self.appDescription.text;
+  [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
+  [self.ideaController saveIdeas];
+
+
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
+    NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);
 
   
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
+
 }
 
 

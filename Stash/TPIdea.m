@@ -13,16 +13,18 @@
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
   self = [super init];
-  if (self)
+  
+  if (!self)
   {
+    return nil;
+  }
     self.categoryIcon = [UIImage imageWithData:self.imageData];
 
     self.imageData = [aDecoder decodeObjectForKey:@"imageData"];
     self.workingTitle = [aDecoder decodeObjectForKey:@"workingTitle"];
     self.appDescription = [aDecoder decodeObjectForKey:@"appDescription"];
-  }
-  
-  return self;
+    self.categoryIcon = [aDecoder decodeObjectForKey:@"categoryIcon"];
+    return self;
 }
 
 -(void)encodeWithCoder:(NSCoder *)aCoder

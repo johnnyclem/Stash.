@@ -13,22 +13,22 @@
 @end
 
 @implementation TPNavigationController
-
-- (IBAction)scrollToNewIdea:(id)sender
-{
-  
-//  if ([sender tag])
-//  {
-  
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
-    
-//  }
+//
+//- (IBAction)scrollToNewIdea:(id)sender
+//{
 //  
-//  [[NSNotificationCenter defaultCenter] postNotificationName:@"addOrBrowseNotification" object:nil];
-//  self.buttonTag = 2;
+////  if ([sender tag])
+////  {
 //  
-  
-}
+//    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+//    
+////  }
+////  
+////  [[NSNotificationCenter defaultCenter] postNotificationName:@"addOrBrowseNotification" object:nil];
+////  self.buttonTag = 2;
+////  
+//  
+//}
 
 
 @end

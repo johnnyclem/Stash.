@@ -14,6 +14,7 @@
 @property (strong, nonatomic) TPIdea *pendingIdea;
 
 -(instancetype)initWithArchive;
+
 - (void)saveIdeas;
 
 @end

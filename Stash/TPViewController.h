@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TPIdeaController.h"
 
 @interface TPViewController : UIViewController
+@property (nonatomic, strong) TPIdeaController *ideaController;
 
 
 @end
