@@ -16,7 +16,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <containerView contentMode="scaleToFill" id="8Gr-KX-UWb" userLabel="Container View1">
+                                    <containerView tag="1" contentMode="scaleToFill" id="8Gr-KX-UWb" userLabel="Container View1">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -24,7 +24,7 @@
                                             <segue destination="yWS-fc-btZ" kind="embed" id="cdz-il-71S"/>
                                         </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" id="Aof-MG-gXt" userLabel="Container View2">
+                                    <containerView tag="2" contentMode="scaleToFill" id="Aof-MG-gXt" userLabel="Container View2">
                                         <rect key="frame" x="320" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -32,7 +32,7 @@
                                             <segue destination="7qI-6S-Ph6" kind="embed" id="YHY-fN-Mqy"/>
                                         </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" id="F1x-Ge-gab" userLabel="Container View3">
+                                    <containerView tag="3" contentMode="scaleToFill" id="F1x-Ge-gab" userLabel="Container View3">
                                         <rect key="frame" x="640" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -40,7 +40,7 @@
                                             <segue destination="YQQ-pC-rNq" kind="embed" id="RfY-2w-BAH"/>
                                         </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" id="0RH-0l-sgR" userLabel="Container View4">
+                                    <containerView tag="4" contentMode="scaleToFill" id="0RH-0l-sgR" userLabel="Container View4">
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -48,7 +48,7 @@
                                             <segue destination="v7P-z5-1Sn" kind="embed" id="8e5-uW-4fm"/>
                                         </connections>
                                     </containerView>
-                                    <containerView contentMode="scaleToFill" id="Cc7-pU-aWa" userLabel="Container View5">
+                                    <containerView tag="5" contentMode="scaleToFill" id="Cc7-pU-aWa" userLabel="Container View5">
                                         <rect key="frame" x="1280" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -73,7 +73,7 @@
         <!--Add or Browse (Main)-->
         <scene sceneID="gcu-Gj-Dut">
             <objects>
-                <viewController id="YQQ-pC-rNq" userLabel="Add or Browse (Main)" customClass="TPAddIdeaViewController" sceneMemberID="viewController">
+                <viewController id="YQQ-pC-rNq" userLabel="Add or Browse (Main)" customClass="TPNavigationController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QER-gi-qCi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,22 +86,23 @@
                                 <rect key="frame" x="80" y="114" width="160" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Drh-I3-tz8" userLabel="Add Idea Button">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Drh-I3-tz8" userLabel="Add Idea Button">
                                 <rect key="frame" x="98" y="157" width="124" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="AddIdea.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="AddIdea.png"/>
                                 <connections>
-                                    <action selector="scrollToNewIdea:" destination="YQQ-pC-rNq" eventType="touchUpInside" id="6Iz-n7-Ban"/>
+                                    <action selector="scrollToNewIdea:" destination="YQQ-pC-rNq" eventType="touchUpInside" id="CLN-RI-Gjc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0TD-B8-t4C" userLabel="Browse Ideas Button">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0TD-B8-t4C" userLabel="Browse Ideas Button">
                                 <rect key="frame" x="98" y="363" width="124" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BrowseIdea.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scrollToNewIdea:" destination="YQQ-pC-rNq" eventType="touchUpInside" id="0nz-dz-eDn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -114,7 +115,7 @@
         <!--Add Idea-->
         <scene sceneID="Prv-af-ryx">
             <objects>
-                <viewController id="S6b-Mb-lq3" userLabel="Add Idea" sceneMemberID="viewController">
+                <viewController id="S6b-Mb-lq3" userLabel="Add Idea" customClass="TPAddIdeaVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Rg-Jc-BMU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -153,9 +154,22 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jjb-7l-ZEj">
+                                <rect key="frame" x="122" y="502" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GO HOME!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="e6e-WP-3tc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryImage" destination="bJl-2b-a4Q" id="CId-FI-oEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I54-7e-pAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +178,7 @@
         <!--Select App Category-->
         <scene sceneID="nfZ-pA-EHG">
             <objects>
-                <viewController id="v7P-z5-1Sn" userLabel="Select App Category" sceneMemberID="viewController">
+                <viewController id="v7P-z5-1Sn" userLabel="Select App Category" customClass="TPCategorySelectionVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgx-jc-qyT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -175,6 +189,9 @@
                                 <state key="normal" image="Music_Icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="UTT-Ib-o9S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zB3-0I-Cnk" userLabel="Travel">
                                 <rect key="frame" x="93" y="161" width="64" height="64"/>
@@ -182,6 +199,9 @@
                                 <state key="normal" title="Button" image="Travel_Icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="CFw-sT-75d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aT5-Lf-deW" userLabel="Photography">
                                 <rect key="frame" x="165" y="161" width="64" height="64"/>
@@ -189,6 +209,9 @@
                                 <state key="normal" image="Photography_Icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="0AX-Fg-IKb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xoo-Jl-Ypn" userLabel="Lifestyle">
                                 <rect key="frame" x="237" y="161" width="64" height="64"/>
@@ -196,6 +219,9 @@
                                 <state key="normal" image="Lifestyle_Icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="zW5-ZU-skO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1xz-Zf-YVc" userLabel="Reference">
                                 <rect key="frame" x="20" y="233" width="64" height="64"/>

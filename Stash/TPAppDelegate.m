@@ -13,6 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  self.ideaController = [TPIdeaController new];
+  
   return YES;
 }
 							
