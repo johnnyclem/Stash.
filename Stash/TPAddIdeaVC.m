@@ -9,7 +9,7 @@
 #import "TPAddIdeaVC.h"
 #import "TPAppDelegate.h"
 
-@interface TPAddIdeaVC ()
+@interface TPAddIdeaVC () <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIImageView *selectedCategoryIcon;
 @property (weak, nonatomic) IBOutlet UITextField *workingTitle;
@@ -26,9 +26,21 @@
 -(void)viewDidLoad
 {
   [super viewDidLoad];
+
+  
   
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
+  
+  [[self.workingTitle layer] setBorderColor:[[UIColor colorWithRed:0.21 green:0.62 blue:0.91 alpha:1] CGColor]];
+  self.workingTitle.layer.borderWidth= 3.0f;
+  
+  self.appDescription.layer.borderColor = [[UIColor colorWithRed:0.21 green:0.62 blue:0.91 alpha:1] CGColor];
+  self.appDescription.layer.borderWidth= 3.0f;
+  
+  
+  
+
   
   
   
@@ -46,6 +58,9 @@
 {
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
 }
+- (IBAction)backButton:(id)sender {
+   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+}
 
 - (IBAction)goHome:(id)sender {
  
@@ -62,9 +77,19 @@
   [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
     NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);
 
-  
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [self.workingTitle resignFirstResponder];
+  [self.appDescription resignFirstResponder]; 
 
 }
+
+
+
+
+
 
 
 

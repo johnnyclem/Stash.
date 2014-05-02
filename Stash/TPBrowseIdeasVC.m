@@ -12,7 +12,7 @@
 
 
 
-@interface TPBrowseIdeasVC ()
+@interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -27,8 +27,10 @@
   
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
+  
 
   
+  // Gets notified when a new idea is added so it can reload the collection view
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(updateListOfIdeas)
                                                name:@"UpdateBrowseScreen"
@@ -40,6 +42,12 @@
 {
   [self.collectionView reloadData];
 }
+
+- (IBAction)backButton:(id)sender {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+  
+}
+
 
 #pragma mark - CollectionView DataSource/Delegate
 
@@ -71,7 +79,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MyIdeaSelected" object:nil];
 
-  
   
   
 }

@@ -29,6 +29,9 @@
   
   
 }
+- (IBAction)BacktoHome:(id)sender {
+   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+}
 
 - (IBAction)categorySelected:(id)sender
 {

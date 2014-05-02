@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		5CA395550405474CB8773050 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABA92A0C3AE4A6BBA37FEDF /* libPods.a */; };
+		D710C02319139C5600F6F372 /* Update_Add_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02119139C5600F6F372 /* Update_Add_Button.png */; };
+		D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02219139C5600F6F372 /* Update_Browse_Button.png */; };
+		D710C02619139C7600F6F372 /* Stash_Logo_And_Tagline.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02519139C7600F6F372 /* Stash_Logo_And_Tagline.png */; };
+		D710C02C19139C9600F6F372 /* GlowAddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02819139C9600F6F372 /* GlowAddButton.png */; };
+		D710C02D19139C9600F6F372 /* Glowing_Browse_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02919139C9600F6F372 /* Glowing_Browse_Button.png */; };
+		D710C02E19139C9600F6F372 /* Glowing_Small_Outer_Ring.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02A19139C9600F6F372 /* Glowing_Small_Outer_Ring.png */; };
+		D710C03119139E6900F6F372 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C02F19139E6900F6F372 /* right_arrow.png */; };
+		D710C03219139E6900F6F372 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C03019139E6900F6F372 /* left_arrow.png */; };
+		D710C0351913A4FF00F6F372 /* StashIt.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C0341913A4FF00F6F372 /* StashIt.png */; };
+		D710C0391913A67F00F6F372 /* StashIt2.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C0371913A67F00F6F372 /* StashIt2.png */; };
+		D710C03D1913A89C00F6F372 /* PickACategoryNew.png in Resources */ = {isa = PBXBuildFile; fileRef = D710C03C1913A89C00F6F372 /* PickACategoryNew.png */; };
 		D712B7661912E5780063B45B /* TPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7651912E5780063B45B /* TPHomeVC.m */; };
 		D712B7691912FDC20063B45B /* TPBrowseIdeasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */; };
 		D712B76C191311290063B45B /* TPIdeaDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B76B191311290063B45B /* TPIdeaDetailVC.m */; };
@@ -79,6 +90,18 @@
 /* Begin PBXFileReference section */
 		5DA3F53528254B0FBE8B69AB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6ABA92A0C3AE4A6BBA37FEDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D710C02119139C5600F6F372 /* Update_Add_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Update_Add_Button.png; sourceTree = "<group>"; };
+		D710C02219139C5600F6F372 /* Update_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Update_Browse_Button.png; sourceTree = "<group>"; };
+		D710C02519139C7600F6F372 /* Stash_Logo_And_Tagline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stash_Logo_And_Tagline.png; sourceTree = "<group>"; };
+		D710C02819139C9600F6F372 /* GlowAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlowAddButton.png; sourceTree = "<group>"; };
+		D710C02919139C9600F6F372 /* Glowing_Browse_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glowing_Browse_Button.png; sourceTree = "<group>"; };
+		D710C02A19139C9600F6F372 /* Glowing_Small_Outer_Ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Glowing_Small_Outer_Ring.png; sourceTree = "<group>"; };
+		D710C02F19139E6900F6F372 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		D710C03019139E6900F6F372 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		D710C0331913A3EC00F6F372 /* Category_Selection */ = {isa = PBXFileReference; lastKnownFileType = file; path = Category_Selection; sourceTree = "<group>"; };
+		D710C0341913A4FF00F6F372 /* StashIt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StashIt.png; sourceTree = "<group>"; };
+		D710C0371913A67F00F6F372 /* StashIt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StashIt2.png; sourceTree = "<group>"; };
+		D710C03C1913A89C00F6F372 /* PickACategoryNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickACategoryNew.png; sourceTree = "<group>"; };
 		D712B7641912E5780063B45B /* TPHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPHomeVC.h; sourceTree = "<group>"; };
 		D712B7651912E5780063B45B /* TPHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPHomeVC.m; sourceTree = "<group>"; };
 		D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBrowseIdeasCell.h; sourceTree = "<group>"; };
@@ -180,12 +203,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D710C02019139C4500F6F372 /* New Images */ = {
+			isa = PBXGroup;
+			children = (
+				D710C03C1913A89C00F6F372 /* PickACategoryNew.png */,
+				D710C0371913A67F00F6F372 /* StashIt2.png */,
+				D710C0341913A4FF00F6F372 /* StashIt.png */,
+				D710C0331913A3EC00F6F372 /* Category_Selection */,
+				D710C02F19139E6900F6F372 /* right_arrow.png */,
+				D710C03019139E6900F6F372 /* left_arrow.png */,
+				D710C02819139C9600F6F372 /* GlowAddButton.png */,
+				D710C02919139C9600F6F372 /* Glowing_Browse_Button.png */,
+				D710C02A19139C9600F6F372 /* Glowing_Small_Outer_Ring.png */,
+				D710C02519139C7600F6F372 /* Stash_Logo_And_Tagline.png */,
+				D710C02119139C5600F6F372 /* Update_Add_Button.png */,
+				D710C02219139C5600F6F372 /* Update_Browse_Button.png */,
+			);
+			name = "New Images";
+			sourceTree = "<group>";
+		};
 		D7ADF4E019137D3100869CD6 /* Browse */ = {
 			isa = PBXGroup;
 			children = (
+				D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */,
+				D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */,
 				D712B76A191311290063B45B /* TPIdeaDetailVC.h */,
-				D7ECF5BE1912CE3200FF7DE6 /* TPBrowseIdeasVC.h */,
 				D712B76B191311290063B45B /* TPIdeaDetailVC.m */,
+				D7ECF5BE1912CE3200FF7DE6 /* TPBrowseIdeasVC.h */,
 				D7ECF5BF1912CE3200FF7DE6 /* TPBrowseIdeasVC.m */,
 			);
 			name = Browse;
@@ -194,9 +238,9 @@
 		D7ADF4E119137D3F00869CD6 /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				D7ECF5B61912B29F00FF7DE6 /* TPAddIdeaVC.h */,
 				D7ECF5B31912B29100FF7DE6 /* TPCategorySelectionVC.h */,
 				D7ECF5B41912B29100FF7DE6 /* TPCategorySelectionVC.m */,
+				D7ECF5B61912B29F00FF7DE6 /* TPAddIdeaVC.h */,
 				D7ECF5B71912B29F00FF7DE6 /* TPAddIdeaVC.m */,
 			);
 			name = Add;
@@ -289,8 +333,6 @@
 				D712B7651912E5780063B45B /* TPHomeVC.m */,
 				D7DFA67D19117FD2001AE811 /* TPViewController.h */,
 				D7DFA67E19117FD2001AE811 /* TPViewController.m */,
-				D712B7671912FDC20063B45B /* TPBrowseIdeasCell.h */,
-				D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -377,6 +419,7 @@
 		D7F007321911DE1400EB0C62 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D710C02019139C4500F6F372 /* New Images */,
 				D7F4D8BE191205340067593E /* SuperViewBG.png */,
 				D7F4D8BF191205340067593E /* SuperViewBG@2x.png */,
 				D7F006EC1911C18300EB0C62 /* Catagory Icons */,
@@ -479,34 +522,45 @@
 			files = (
 				D7F007191911C18300EB0C62 /* Navigation_Icon.png in Resources */,
 				D7F0070F1911C18300EB0C62 /* Business_Icon.png in Resources */,
+				D710C03119139E6900F6F372 /* right_arrow.png in Resources */,
 				D7DFA68119117FD2001AE811 /* Images.xcassets in Resources */,
 				D7F007251911C18300EB0C62 /* Launch Image Quotes.rtf in Resources */,
 				D7F007221911C18300EB0C62 /* Weather.png in Resources */,
 				D7F007371911E2CB00EB0C62 /* PickACategory.png in Resources */,
+				D710C0391913A67F00F6F372 /* StashIt2.png in Resources */,
 				D7F0071C1911C18300EB0C62 /* Productivity_Icon.png in Resources */,
+				D710C02D19139C9600F6F372 /* Glowing_Browse_Button.png in Resources */,
 				D7F0071B1911C18300EB0C62 /* Photography_Icon.png in Resources */,
 				D7F0071D1911C18300EB0C62 /* Reference_Icon.png in Resources */,
 				D7F007231911C18300EB0C62 /* Stash_Icon.png in Resources */,
 				D7F007161911C18300EB0C62 /* Lifestyle_Icon.png in Resources */,
 				D7F007271911C18300EB0C62 /* Stash_Launcher_1.png in Resources */,
+				D710C0351913A4FF00F6F372 /* StashIt.png in Resources */,
 				D7F007281911C18300EB0C62 /* AddIdea.png in Resources */,
 				D7F007241911C18300EB0C62 /* Stash_Icon.psd in Resources */,
+				D710C02C19139C9600F6F372 /* GlowAddButton.png in Resources */,
 				D7F4D8C1191205340067593E /* SuperViewBG@2x.png in Resources */,
 				D7F007261911C18300EB0C62 /* Stash_Launcher.psd in Resources */,
 				D7F0072B1911C18300EB0C62 /* StashLogo.png in Resources */,
 				D7DFA67319117FD2001AE811 /* InfoPlist.strings in Resources */,
 				D7DFA67C19117FD2001AE811 /* Main.storyboard in Resources */,
 				D7F007131911C18300EB0C62 /* Fitness_Icon.png in Resources */,
+				D710C03D1913A89C00F6F372 /* PickACategoryNew.png in Resources */,
 				D7F0071F1911C18300EB0C62 /* Sports_Icon.png in Resources */,
 				D7F007151911C18300EB0C62 /* Games_Icon.png in Resources */,
+				D710C02319139C5600F6F372 /* Update_Add_Button.png in Resources */,
 				D7F007291911C18300EB0C62 /* BrowseIdea.png in Resources */,
 				D7F007171911C18300EB0C62 /* Medical_Icon.png in Resources */,
 				D7F007101911C18300EB0C62 /* Education_Icon.png in Resources */,
 				D7F4D8C0191205340067593E /* SuperViewBG.png in Resources */,
 				D7F007361911E2CB00EB0C62 /* tagline.png in Resources */,
+				D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */,
+				D710C03219139E6900F6F372 /* left_arrow.png in Resources */,
 				D7F007201911C18300EB0C62 /* Travel_Icon.png in Resources */,
 				D7F0071A1911C18300EB0C62 /* News_Icon.png in Resources */,
+				D710C02619139C7600F6F372 /* Stash_Logo_And_Tagline.png in Resources */,
 				D7F0072A1911C18300EB0C62 /* MusicIcon.png in Resources */,
+				D710C02E19139C9600F6F372 /* Glowing_Small_Outer_Ring.png in Resources */,
 				D7F007121911C18300EB0C62 /* Finance_Icon.png in Resources */,
 				D7F007141911C18300EB0C62 /* FoodAndDrinkIcon.png in Resources */,
 				D7F0071E1911C18300EB0C62 /* SocialNetworking_Icon.png in Resources */,
