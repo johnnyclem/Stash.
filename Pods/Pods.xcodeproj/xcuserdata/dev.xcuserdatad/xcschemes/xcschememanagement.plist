@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-RaptureXML.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-UIImage+SVG.xcscheme</key>
+		<key>Pods-TWMessageBarManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>134B0937CA9E4851ABF9860F</key>
+		<key>3487F5215B664EE19ABF253E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7C8B6F0FA3F4926B55FD189</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EE4FE097B96A450E90AF8DF5</key>
+		<key>86A4AC3D0DAE4CD9B01E75E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

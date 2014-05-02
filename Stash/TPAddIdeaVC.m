@@ -26,6 +26,7 @@
 -(void)viewDidLoad
 {
   [super viewDidLoad];
+//  [TWMessageBarManager sharedInstance];
 
   
   
@@ -72,10 +73,17 @@
   //Ask why this is not self.ideaController.ideas
   [self.ideaController saveIdeas];
 
-
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
-    NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);
+  [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
+                                                 description:@"Your new idea was successfully added."
+                                                        type:TWMessageBarMessageTypeSuccess];
+  double delayInSeconds = 2.0;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
+    NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);  });
+ 
 
 }
 

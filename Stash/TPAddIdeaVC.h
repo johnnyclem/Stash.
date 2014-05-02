@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TPIdeaController.h"
+#import "TWMessageBarManager.h"
+
 
 @interface TPAddIdeaVC : UIViewController
 @property (nonatomic, strong) TPIdeaController *ideaController;
