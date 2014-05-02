@@ -12,6 +12,7 @@
 
 @interface TPCategorySelectionVC ()
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
+@property (weak, nonatomic) IBOutlet UILabel *categoryTitle;
 
 
 @end
@@ -25,6 +26,9 @@
   
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
+  
+  self.categoryTitle.layer.borderColor = [[UIColor whiteColor] CGColor];
+  self.categoryTitle.layer.borderWidth= 4.0f;
   
   
   

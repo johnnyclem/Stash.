@@ -12,7 +12,7 @@
 
 
 
-@interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate>
+@interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate, UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -48,7 +48,6 @@
   
 }
 
-
 #pragma mark - CollectionView DataSource/Delegate
 
 
@@ -78,9 +77,8 @@
   
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MyIdeaSelected" object:nil];
-
-  
   
 }
+
 
 @end

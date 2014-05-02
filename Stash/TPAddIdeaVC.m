@@ -33,11 +33,11 @@
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
-  [[self.workingTitle layer] setBorderColor:[[UIColor colorWithRed:0.21 green:0.62 blue:0.91 alpha:1] CGColor]];
-  self.workingTitle.layer.borderWidth= 3.0f;
+  [[self.workingTitle layer] setBorderColor:[[UIColor whiteColor] CGColor]];
+  self.workingTitle.layer.borderWidth= 4.0f;
   
-  self.appDescription.layer.borderColor = [[UIColor colorWithRed:0.21 green:0.62 blue:0.91 alpha:1] CGColor];
-  self.appDescription.layer.borderWidth= 3.0f;
+  self.appDescription.layer.borderColor = [[UIColor whiteColor] CGColor];
+  self.appDescription.layer.borderWidth= 4.0f;
   
   
   
@@ -90,8 +90,21 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
   [self.workingTitle resignFirstResponder];
-  [self.appDescription resignFirstResponder]; 
+  [self.appDescription resignFirstResponder];
+}
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  [textField resignFirstResponder];
+  return NO;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+  
+  if([text isEqualToString:@"\n"]) {
+    [textView resignFirstResponder];
+    return NO;
+  }
+  
+  return YES;
 }
 
 

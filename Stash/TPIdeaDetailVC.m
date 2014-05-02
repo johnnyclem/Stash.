@@ -9,7 +9,7 @@
 #import "TPIdeaDetailVC.h"
 #import "TPAppDelegate.h"
 
-@interface TPIdeaDetailVC ()
+@interface TPIdeaDetailVC () <UITextFieldDelegate>
 
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
@@ -30,6 +30,7 @@
 {
   [super viewDidLoad];
   
+  
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
@@ -40,12 +41,20 @@
                                              object:nil];
   
 }
+- (IBAction)backButton:(id)sender {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+  
+}
 
 -(void)prepareForOnScreen
 {
   self.appName.text = self.ideaController.mySelectedIdea.workingTitle;
   self.appIcon.image = self.ideaController.mySelectedIdea.categoryIcon;
   self.appDescription.text = self.ideaController.mySelectedIdea.appDescription;
+  
+  NSLog(@"%@", self.appDescription.text);
 
 }
+
+
 @end
