@@ -16,10 +16,11 @@
 
 - (IBAction)addNewIdea:(id)sender
 {
-  if ([sender tag]) {
+  if ([sender tag] == 1) {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
-  }
+  } else if ([sender tag] == 2) {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+  }
 
 }
 

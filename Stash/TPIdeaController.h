@@ -12,6 +12,7 @@
 @interface TPIdeaController : NSObject
 @property (strong, nonatomic) NSMutableArray *ideas;
 @property (strong, nonatomic) TPIdea *pendingIdea;
+@property (strong, nonatomic) TPIdea *mySelectedIdea;
 
 -(instancetype)initWithArchive;
 

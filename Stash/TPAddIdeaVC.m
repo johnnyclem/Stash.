@@ -53,6 +53,8 @@
   self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
   self.ideaController.pendingIdea.appDescription = self.appDescription.text;
   [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
+
+  //Ask why this is not self.ideaController.ideas
   [self.ideaController saveIdeas];
 
 

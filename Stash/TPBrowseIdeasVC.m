@@ -10,6 +10,8 @@
 #import "TPBrowseIdeasCell.h"
 #import "TPAppDelegate.h"
 
+
+
 @interface TPBrowseIdeasVC ()
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
@@ -25,7 +27,7 @@
   
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
-  
+
   
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(updateListOfIdeas)
@@ -33,7 +35,6 @@
                                              object:nil];
   
 }
-
 
 -(void)updateListOfIdeas
 {
@@ -54,13 +55,24 @@
   
   TPBrowseIdeasCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
   TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
-  //  TPIdea *idea = [self.modelController.ideas objectAtIndex:[[[self.collectionView indexPathsForSelectedItems] lastObject] row]];
   
   cell.iconImage.image = idea.categoryIcon;
-  NSLog(@"%@", cell.iconImage.image);
-  
   
   return cell;
+  
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+
+{
+  TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
+  self.ideaController.mySelectedIdea = idea;
+  
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MyIdeaSelected" object:nil];
+
+  
+  
   
 }
 

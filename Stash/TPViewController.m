@@ -41,6 +41,11 @@
                                            selector:@selector(scrollRight)
                                                name:@"moveRight"
                                              object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(scrollLeft)
+                                               name:@"moveLeft"
+                                             object:nil];
  
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(scrolltoHome)
