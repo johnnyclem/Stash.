@@ -14,6 +14,8 @@
 
 @implementation TPHomeVC
 
+  
+
 - (IBAction)addNewIdea:(id)sender
 {
   if ([sender tag] == 1) {
@@ -23,6 +25,8 @@
   }
 
 }
+
+
 
 
 @end

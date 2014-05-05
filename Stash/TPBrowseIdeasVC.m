@@ -35,6 +35,8 @@
                                            selector:@selector(updateListOfIdeas)
                                                name:@"UpdateBrowseScreen"
                                              object:nil];
+
+  
   
 }
 
@@ -79,6 +81,9 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MyIdeaSelected" object:nil];
   
 }
+
+
+
 
 
 @end

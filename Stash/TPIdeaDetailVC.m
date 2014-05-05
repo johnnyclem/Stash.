@@ -17,8 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *appIcon;
 @property (weak, nonatomic) IBOutlet UITextView *appDescription;
 
-
-//Still considering this one
 @property (weak, nonatomic) IBOutlet UIView *blueView;
 
 @end
@@ -33,6 +31,11 @@
   
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
+  
+  self.appDescription.contentInset = UIEdgeInsetsMake(-4,-25,0,0);
+  
+
+
   
   
   [[NSNotificationCenter defaultCenter] addObserver:self

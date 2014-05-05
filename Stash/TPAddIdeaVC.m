@@ -26,7 +26,6 @@
 -(void)viewDidLoad
 {
   [super viewDidLoad];
-//  [TWMessageBarManager sharedInstance];
 
   
   
@@ -34,16 +33,10 @@
   self.ideaController = self.appDelegate.ideaController;
   
   [[self.workingTitle layer] setBorderColor:[[UIColor whiteColor] CGColor]];
-  self.workingTitle.layer.borderWidth= 4.0f;
+  self.workingTitle.layer.borderWidth= 2.0f;
   
   self.appDescription.layer.borderColor = [[UIColor whiteColor] CGColor];
-  self.appDescription.layer.borderWidth= 4.0f;
-  
-  
-  
-
-  
-  
+  self.appDescription.layer.borderWidth= 2.0f;
   
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(prepareForOnScreen)
@@ -57,6 +50,9 @@
 
 -(void)prepareForOnScreen
 {
+  [_appDescription setText:@""];
+  [_workingTitle setText:@""];
+  
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
 }
 - (IBAction)backButton:(id)sender {
@@ -65,12 +61,13 @@
 
 - (IBAction)goHome:(id)sender {
  
-
+  
+  [self.workingTitle resignFirstResponder];
+  [self.appDescription resignFirstResponder];
   self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
   self.ideaController.pendingIdea.appDescription = self.appDescription.text;
   [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
 
-  //Ask why this is not self.ideaController.ideas
   [self.ideaController saveIdeas];
 
   [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
