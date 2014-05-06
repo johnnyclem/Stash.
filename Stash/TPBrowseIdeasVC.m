@@ -36,6 +36,10 @@
                                                name:@"UpdateBrowseScreen"
                                              object:nil];
 
+  UILongPressGestureRecognizer *longpress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(deleteIdea:)];
+  longpress.minimumPressDuration = 0.5f;
+  longpress.delaysTouchesBegan= YES;
+  [self.collectionView addGestureRecognizer:longpress];
   
   
 }
@@ -79,6 +83,35 @@
   
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MyIdeaSelected" object:nil];
+  
+}
+
+-(void)deleteIdea:(UILongPressGestureRecognizer *)gestureRecognizer
+
+{
+//  if (gestureRecognizer.state != UIGestureRecognizerStateEnded) {
+//    return;
+//  }
+  if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+  
+  CGPoint p = [gestureRecognizer locationInView:self.collectionView];
+  
+  NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:p];
+  if (indexPath == nil) {
+    NSLog(@"Couldn't find your index path");
+  } else {
+
+//    TPBrowseIdeasCell *cell = (TPBrowseIdeasCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    [self.ideaController.ideas removeObjectAtIndex:indexPath.row];
+    [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+    NSLog(@"Your Ideas Array Count is: %lu", (unsigned long)self.ideaController.ideas.count);
+    gestureRecognizer.enabled = NO;
+    gestureRecognizer.enabled = YES;
+    [self.ideaController saveIdeas];
+    NSLog(@"Your Ideas Array Count is: %lu", (unsigned long)self.ideaController.ideas.count);
+    
+  }
+}
   
 }
 
