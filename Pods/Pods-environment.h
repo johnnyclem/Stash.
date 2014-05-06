@@ -6,6 +6,12 @@
 // project.
 
 
+// MBAlertView
+#define COCOAPODS_POD_AVAILABLE_MBAlertView
+#define COCOAPODS_VERSION_MAJOR_MBAlertView 1
+#define COCOAPODS_VERSION_MINOR_MBAlertView 1
+#define COCOAPODS_VERSION_PATCH_MBAlertView 0
+
 // TWMessageBarManager
 #define COCOAPODS_POD_AVAILABLE_TWMessageBarManager
 #define COCOAPODS_VERSION_MAJOR_TWMessageBarManager 1

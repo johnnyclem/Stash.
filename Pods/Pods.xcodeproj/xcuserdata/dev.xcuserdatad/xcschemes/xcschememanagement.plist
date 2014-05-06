@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-MBAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TWMessageBarManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CF0D0C69ADEF47E0B46C0DB3</key>
+		<key>2555B53DCBBF4C1E8EC80E00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D51A3D14C71A4FFEA248CFFE</key>
+		<key>A2FA396B668D4E6EA4829F21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB2F3FA770EA4F4F8CA74D29</key>
 		<dict>
 			<key>primary</key>
 			<true/>

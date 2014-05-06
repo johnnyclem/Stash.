@@ -12,6 +12,7 @@
 
 
 
+
 @interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate, UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
@@ -89,9 +90,7 @@
 -(void)deleteIdea:(UILongPressGestureRecognizer *)gestureRecognizer
 
 {
-//  if (gestureRecognizer.state != UIGestureRecognizerStateEnded) {
-//    return;
-//  }
+
   if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
   
   CGPoint p = [gestureRecognizer locationInView:self.collectionView];
@@ -100,15 +99,15 @@
   if (indexPath == nil) {
     NSLog(@"Couldn't find your index path");
   } else {
-
-//    TPBrowseIdeasCell *cell = (TPBrowseIdeasCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-    [self.ideaController.ideas removeObjectAtIndex:indexPath.row];
-    [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
-    NSLog(@"Your Ideas Array Count is: %lu", (unsigned long)self.ideaController.ideas.count);
-    gestureRecognizer.enabled = NO;
-    gestureRecognizer.enabled = YES;
-    [self.ideaController saveIdeas];
-    NSLog(@"Your Ideas Array Count is: %lu", (unsigned long)self.ideaController.ideas.count);
+    MBAlertView *alert = [MBAlertView alertWithBody:@"Are you sure you want to delete this Idea? You cannot undo this." cancelTitle:@"Cancel" cancelBlock:nil];
+    [alert addButtonWithText:@"Delete" type:MBAlertViewItemTypeDestructive block:^{
+      [self.ideaController.ideas removeObjectAtIndex:indexPath.row];
+      [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+      gestureRecognizer.enabled = NO;
+      gestureRecognizer.enabled = YES;
+      [self.ideaController saveIdeas];
+      NSLog(@"New idea count is: %lu", (unsigned long)self.ideaController.ideas.count);}];
+    [alert addToDisplayQueue];
     
   }
 }
