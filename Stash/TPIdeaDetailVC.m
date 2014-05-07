@@ -32,7 +32,7 @@
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
-  self.appDescription.contentInset = UIEdgeInsetsMake(-4,-25,0,0);
+  self.appDescription.contentInset = UIEdgeInsetsMake(4,25,0,0);
   
 
 

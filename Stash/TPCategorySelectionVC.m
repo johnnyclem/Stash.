@@ -28,7 +28,7 @@
   self.ideaController = self.appDelegate.ideaController;
   
   self.categoryTitle.layer.borderColor = [[UIColor whiteColor] CGColor];
-  self.categoryTitle.layer.borderWidth= 4.0f;
+  self.categoryTitle.layer.borderWidth= 3.0f;
   
   
   
