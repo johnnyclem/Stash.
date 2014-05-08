@@ -22,7 +22,7 @@
   
 
   
-  UIImage *back = [UIImage imageNamed:@"forrest"];
+  UIImage *back = [UIImage imageNamed:@"altforrest"];
 
   CGSize tileSize = back.size;
   CGRect tileFrame = CGRectMake(0, 0, back.size.width, tileSize.height);
@@ -35,7 +35,7 @@
   bgTile.frame = tileFrame;
   
   
-  [_scrollView addSubview:bgTile onLayer: -1];
+  [_scrollView addSubview:bgTile onLayer: -1.105];
 
   
   _scrollView.contentSize = CGSizeMake( 5 * self.view.bounds.size.width, tileSize.height );

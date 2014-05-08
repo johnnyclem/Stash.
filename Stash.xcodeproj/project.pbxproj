@@ -25,6 +25,7 @@
 		D74E74F81914485C00935100 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74F31914485C00935100 /* TPKeyboardAvoidingTableView.m */; };
 		D74E74F91914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74F51914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		D74E74FD191456EE00935100 /* GlowAddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D74E74FC191456EE00935100 /* GlowAddButton.png */; };
+		D75231A9191B6EC200A3C457 /* altforrest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75231A8191B6EC200A3C457 /* altforrest@2x.png */; };
 		D779AD571919B15000D0200E /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D779AD511919B15000D0200E /* libTestFlight.a */; };
 		D779AD581919B15000D0200E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D779AD521919B15000D0200E /* README.md */; };
 		D779AD591919B15000D0200E /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D779AD531919B15000D0200E /* release_notes.md */; };
@@ -111,6 +112,7 @@
 		D74E74F41914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		D74E74F51914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		D74E74FC191456EE00935100 /* GlowAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlowAddButton.png; sourceTree = "<group>"; };
+		D75231A8191B6EC200A3C457 /* altforrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "altforrest@2x.png"; sourceTree = "<group>"; };
 		D779AD511919B15000D0200E /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		D779AD521919B15000D0200E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D779AD531919B15000D0200E /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		D710C04E19142C1800F6F372 /* BG Images */ = {
 			isa = PBXGroup;
 			children = (
+				D75231A8191B6EC200A3C457 /* altforrest@2x.png */,
 			);
 			name = "BG Images";
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */,
 				D710C03219139E6900F6F372 /* left_arrow.png in Resources */,
 				D7F007201911C18300EB0C62 /* Travel_Icon.png in Resources */,
+				D75231A9191B6EC200A3C457 /* altforrest@2x.png in Resources */,
 				D7F0071A1911C18300EB0C62 /* News_Icon.png in Resources */,
 				D710C02619139C7600F6F372 /* Stash_Logo_And_Tagline.png in Resources */,
 				D779AD581919B15000D0200E /* README.md in Resources */,

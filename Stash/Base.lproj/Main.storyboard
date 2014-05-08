@@ -142,7 +142,7 @@
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" maximumZoomScale="2" keyboardDismissMode="interactive" id="7sn-BM-WZU" userLabel="Description Box">
-                                        <rect key="frame" x="20" y="292" width="280" height="184"/>
+                                        <rect key="frame" x="20" y="301" width="280" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -456,7 +456,7 @@
                             <view alpha="0.5" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
                                 <rect key="frame" x="20" y="50" width="280" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.62745098040000002" green="0.6705882353" blue="0.76078431369999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.61960784310000006" blue="0.91372549020000005" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dr-eC-Wou" userLabel="App Name">
                                 <rect key="frame" x="50" y="212.5" width="220" height="35"/>
