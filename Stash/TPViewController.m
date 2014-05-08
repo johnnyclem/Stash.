@@ -22,18 +22,25 @@
   
 
   
-  /* Code to handle initial background/parallax view */
-  UIImage *back = [UIImage imageNamed: @"SuperViewBG"];
+  UIImage *back = [UIImage imageNamed:@"forrest"];
 
   CGSize tileSize = back.size;
-  CGRect tileFrame = CGRectMake(0, 0, 5 * self.view.bounds.size.width, tileSize.height );
+  CGRect tileFrame = CGRectMake(0, 0, back.size.width, tileSize.height);
   
-  UIImageView *bgTile = [[UIImageView alloc] initWithImage: back];
+  NSLog(@" %f", back.size.width);
+  NSLog(@" %f", back.size.height);
+
+  
+  UIImageView *bgTile = [[UIImageView alloc] initWithImage:back];
   bgTile.frame = tileFrame;
   
+  
   [_scrollView addSubview:bgTile onLayer: -1];
+
   
   _scrollView.contentSize = CGSizeMake( 5 * self.view.bounds.size.width, tileSize.height );
+
+  
 
   [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
 
@@ -69,7 +76,6 @@
   CGFloat height = CGRectGetHeight(self.view.frame);
   
   [_scrollView scrollRectToVisible:CGRectMake(width *2, 0, width, height) animated:YES];
-  NSLog(@" %@",NSStringFromCGRect(_scrollView.bounds));
   
 
 }

@@ -59,7 +59,7 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </view>
                     <size key="freeformSize" width="1010" height="568"/>
                     <connections>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJM-8T-DbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="-153"/>
+            <point key="canvasLocation" x="1010" y="-11"/>
         </scene>
         <!--Add Idea-->
         <scene sceneID="Prv-af-ryx">
@@ -170,7 +170,8 @@
                                         <rect key="frame" x="122" y="500" width="75" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" image="StashIt2.png">
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="Stash it.">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -455,7 +456,7 @@
                             <view alpha="0.5" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
                                 <rect key="frame" x="20" y="50" width="280" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.21176470588235294" green="0.61960784313725492" blue="0.9137254901960784" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.62745098040000002" green="0.6705882353" blue="0.76078431369999999" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dr-eC-Wou" userLabel="App Name">
                                 <rect key="frame" x="50" y="212.5" width="220" height="35"/>
@@ -590,7 +591,6 @@
         <image name="Reference_Icon.png" width="134" height="134"/>
         <image name="SocialNetworking_Icon.png" width="134" height="134"/>
         <image name="Sports_Icon.png" width="134" height="134"/>
-        <image name="StashIt2.png" width="132" height="78"/>
         <image name="Stash_Logo_And_Tagline.png" width="379" height="159"/>
         <image name="Travel_Icon.png" width="134" height="134"/>
         <image name="Update_Add_Button.png" width="200" height="200"/>

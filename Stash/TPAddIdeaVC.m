@@ -55,25 +55,34 @@
   
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
 }
-- (IBAction)backButton:(id)sender {
+- (IBAction)backButton:(id)sender
+{
    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
 }
 
-- (IBAction)goHome:(id)sender {
- 
+- (IBAction)goHome:(id)sender
+{
+  if ([self.workingTitle.text isEqualToString:@""] || [self.appDescription.text isEqualToString:@""])
+  {
+    [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Not Quite!"
+                                                   description:@"Every new idea needs a working title and description."
+                                                          type:TWMessageBarMessageTypeError duration:2.0f];
+    return;
+  }
   
   [self.workingTitle resignFirstResponder];
   [self.appDescription resignFirstResponder];
+  
   self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
   self.ideaController.pendingIdea.appDescription = self.appDescription.text;
   [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
 
   [self.ideaController saveIdeas];
-
+  
   [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
                                                  description:@"Your new idea was successfully added."
-                                                        type:TWMessageBarMessageTypeSuccess];
-  double delayInSeconds = 2.0;
+                                                        type:TWMessageBarMessageTypeSuccess duration:2.0f];
+  double delayInSeconds = 2.0f;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     

@@ -31,7 +31,6 @@
   self.categoryTitle.layer.borderWidth= 3.0f;
   
   
-  
 }
 - (IBAction)BacktoHome:(id)sender {
    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
