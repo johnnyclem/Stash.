@@ -8,12 +8,14 @@
 
 #import "TPAddIdeaVC.h"
 #import "TPAppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface TPAddIdeaVC () <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIImageView *selectedCategoryIcon;
 @property (weak, nonatomic) IBOutlet UITextField *workingTitle;
 @property (weak, nonatomic) IBOutlet UITextView *appDescription;
+@property (weak, nonatomic) IBOutlet UIButton *stashButton;
 
 
 
@@ -26,6 +28,9 @@
 -(void)viewDidLoad
 {
   [super viewDidLoad];
+  
+//  [self animateButton];
+
 
   
   
@@ -43,8 +48,24 @@
                                                name:@"categorySelected"
                                              object:nil];
 
-
+//  [self setupKVOForTextFieldAndTextView];
 }
+
+//- (void)setupKVOForTextFieldAndTextView
+//{
+//  [self.appDescription addObserver:self forKeyPath:UITextViewTextDidChangeNotification options:NSKeyValueObservingOptionInitial context:nil];
+//  
+//  [self.workingTitle addObserver:self forKeyPath:UITextFieldTextDidChangeNotification options:NSKeyValueObservingOptionInitial context:nil];
+//}
+//
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+//{
+//    if (_appDescription.text.length && _workingTitle.text.length) {
+//      [self animateButton];
+//    } else {
+//      [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
+//    }
+//}
 
 
 
@@ -68,27 +89,29 @@
                                                    description:@"Every new idea needs a working title and description."
                                                           type:TWMessageBarMessageTypeError duration:2.0f];
     return;
+  } else {
+    [self.workingTitle resignFirstResponder];
+    [self.appDescription resignFirstResponder];
+    
+    self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
+    self.ideaController.pendingIdea.appDescription = self.appDescription.text;
+    [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
+    
+    [self.ideaController saveIdeas];
+    
+    [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
+                                                   description:@"Your new idea was successfully added."
+                                                          type:TWMessageBarMessageTypeSuccess duration:2.0f];
+    double delayInSeconds = 2.0f;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+      
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
+      NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);  });
   }
   
-  [self.workingTitle resignFirstResponder];
-  [self.appDescription resignFirstResponder];
-  
-  self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
-  self.ideaController.pendingIdea.appDescription = self.appDescription.text;
-  [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
 
-  [self.ideaController saveIdeas];
-  
-  [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
-                                                 description:@"Your new idea was successfully added."
-                                                        type:TWMessageBarMessageTypeSuccess duration:2.0f];
-  double delayInSeconds = 2.0f;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
-    NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);  });
  
 
 }
@@ -112,6 +135,36 @@
   
   return YES;
 }
+
+-(void)textViewDidChange:(UITextView *)textView
+{
+  if (textView.text.length > 0 && self.workingTitle.text.length > 0) {
+    [self animateButton];
+  } else if (textView.text.length == 0 || self.workingTitle.text.length == 0) {
+    [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
+  }
+  
+}
+
+-(void)animateButton
+{
+  CABasicAnimation *theAnimation;
+  
+  theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+  theAnimation.duration=1.0;
+  theAnimation.repeatCount=HUGE_VALF;
+  theAnimation.autoreverses=YES;
+  theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+  theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+
+  [self.stashButton.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+  
+  
+  
+}
+
+
+
 
 
 

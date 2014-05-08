@@ -51,16 +51,13 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:2.0];
     [[self colorForButtonStyle] setFill];   
     [path fill];
-    
-    float actualSize = 0;
-    [_title sizeWithFont:kButtonFont minFontSize:8 actualFontSize:&actualSize forWidth:self.bounds.size.width - 20 lineBreakMode:NSLineBreakByClipping];
-    CGSize otherSize = [_title sizeWithFont:[UIFont boldSystemFontOfSize:actualSize]];
-    
+  
+    CGSize otherSize = [_title sizeWithAttributes:@{NSFontAttributeName: kButtonFont}];
     CGPoint origin = CGPointMake(self.bounds.size.width/2.0 - otherSize.width/2.0, self.bounds.size.height/2.0 - otherSize.height/2.0);
     CGRect frame = CGRectMake(origin.x, origin.y, otherSize.width, otherSize.height);
     
     [[self textColor] set];
-    [_title drawInRect:frame withFont:[UIFont boldSystemFontOfSize:actualSize] lineBreakMode:NSLineBreakByClipping];
+    [_title drawInRect:frame withAttributes:@{NSFontAttributeName : kButtonFont}];
 }
 
 @end

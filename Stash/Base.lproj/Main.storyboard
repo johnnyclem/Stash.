@@ -167,10 +167,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jjb-7l-ZEj" userLabel="Stash It Button">
-                                        <rect key="frame" x="122" y="500" width="75" height="43"/>
+                                        <rect key="frame" x="114" y="500" width="93" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Stash it.">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -201,6 +201,7 @@
                     <connections>
                         <outlet property="appDescription" destination="7sn-BM-WZU" id="7jW-hl-d9O"/>
                         <outlet property="selectedCategoryIcon" destination="bJl-2b-a4Q" id="QBU-Tw-Ilc"/>
+                        <outlet property="stashButton" destination="Jjb-7l-ZEj" id="jo4-Ji-Hby"/>
                         <outlet property="workingTitle" destination="DHE-1w-8iC" id="DXE-8K-8Jg"/>
                     </connections>
                 </viewController>
@@ -464,10 +465,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
                                 <rect key="frame" x="20" y="50" width="280" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.21176470589999999" green="0.61960784310000006" blue="0.91372549020000005" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.38823529411764707" blue="0.47843137254901957" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dr-eC-Wou" userLabel="App Name">
                                 <rect key="frame" x="50" y="212.5" width="220" height="35"/>

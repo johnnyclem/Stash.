@@ -20,7 +20,7 @@
 {
   [super viewDidLoad];
     
-  UIImage *back = [UIImage imageNamed:@"altforrest"];
+  UIImage *back = [UIImage imageNamed:@"starforrest"];
 
   CGSize tileSize = back.size;
   CGRect tileFrame = CGRectMake(0, 0, back.size.width, tileSize.height);
