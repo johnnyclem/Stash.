@@ -19,9 +19,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  
-
-  
+    
   UIImage *back = [UIImage imageNamed:@"altforrest"];
 
   CGSize tileSize = back.size;

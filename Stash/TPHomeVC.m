@@ -7,12 +7,28 @@
 //
 
 #import "TPHomeVC.h"
+#import "TPViewController.h"
 
-@interface TPHomeVC ()
+@interface TPHomeVC () <UIScrollViewDelegate>
+@property (nonatomic, weak) IBOutlet SWParallaxScrollView *scrollView;
+
 
 @end
 
 @implementation TPHomeVC
+
+
+-(void)viewDidLoad
+{
+  [super viewDidLoad];
+  
+    self.scrollView.delegate = self;
+  
+  
+
+  
+  
+}
 
   
 
@@ -25,7 +41,6 @@
   }
 
 }
-
 
 
 

@@ -452,7 +452,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
                                 <rect key="frame" x="20" y="37" width="280" height="405"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.61960784313725492" blue="0.9137254901960784" alpha="1" colorSpace="deviceRGB"/>
@@ -550,10 +550,15 @@
                                     <outlet property="delegate" destination="7qI-6S-Ph6" id="BBV-hj-vcA"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5lh-4x-Ifr" userLabel="Back Button">
-                                <rect key="frame" x="273" y="19" width="30" height="22"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="Z3G-8z-2rm">
+                                <rect key="frame" x="290" y="16" width="20" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="right_arrow.png">
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5lh-4x-Ifr" userLabel="Back Button">
+                                <rect key="frame" x="273" y="4" width="47" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
