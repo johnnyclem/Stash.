@@ -24,6 +24,7 @@
 @implementation TPIdeaDetailVC
 
 
+
 -(void)viewDidLoad
 {
   [super viewDidLoad];
@@ -58,6 +59,45 @@
   NSLog(@"%@", self.appDescription.text);
 
 }
+
+- (IBAction)editIdea:(id)sender {
+  
+  self.ideaController.pendingIdea = self.ideaController.mySelectedIdea;
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"moveToAddIdea" object:nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"editIdeaSelected" object:nil];
+
+}
+
+//- (id) initWithFrame:(CGRect)frame
+//{
+//  if ((self = [super initWithFrame:frame]))
+//  {
+//    [self setup];
+//  }
+//  return self;
+//}
+//
+//- (id) initWithCoder:(NSCoder *)coder
+//{
+//  if ((self = [super initWithCoder:coder]))
+//  {
+//    [self setup];
+//  }
+//  return self;
+//}
+//
+//- (void) setup
+//{
+//
+//    self.opaque = NO;
+//    self.backgroundColor = [UIColor clearColor];
+//    
+//    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:self.bounds];
+//    toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    toolbar.barTintColor = self.tintColor;
+//    [self insertSubview:toolbar atIndex:0];
+//  
+//}
 
 
 @end

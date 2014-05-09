@@ -100,7 +100,6 @@
                                 <state key="normal" image="Update_Browse_Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="Category_Selection"/>
                                 <state key="highlighted" image="Glowing_Browse_Button.png"/>
                                 <connections>
                                     <action selector="addNewIdea:" destination="YQQ-pC-rNq" eventType="touchUpInside" id="VyB-Ef-xv9"/>
@@ -174,7 +173,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="goHome:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="e6e-WP-3tc"/>
+                                            <action selector="saveIdea:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="Cf8-Hp-XRI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rom-7k-jvB" userLabel="Back Button">
@@ -580,7 +579,6 @@
     </scenes>
     <resources>
         <image name="Business_Icon.png" width="134" height="134"/>
-        <image name="Category_Selection" width="540" height="76"/>
         <image name="Education_Icon.png" width="134" height="134"/>
         <image name="Entertainment_Icon.png" width="134" height="134"/>
         <image name="Finance_Icon.png" width="134" height="134"/>

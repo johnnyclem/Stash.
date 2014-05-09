@@ -10,12 +10,14 @@
 #import "TPAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 
+
 @interface TPAddIdeaVC () <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIImageView *selectedCategoryIcon;
 @property (weak, nonatomic) IBOutlet UITextField *workingTitle;
 @property (weak, nonatomic) IBOutlet UITextView *appDescription;
 @property (weak, nonatomic) IBOutlet UIButton *stashButton;
+@property (nonatomic) BOOL editingIdea;
 
 
 
@@ -47,26 +49,13 @@
                                            selector:@selector(prepareForOnScreen)
                                                name:@"categorySelected"
                                              object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(prepareForOnScreen)
+                                               name:@"editIdeaSelected"
+                                             object:nil];
 
-//  [self setupKVOForTextFieldAndTextView];
 }
-
-//- (void)setupKVOForTextFieldAndTextView
-//{
-//  [self.appDescription addObserver:self forKeyPath:UITextViewTextDidChangeNotification options:NSKeyValueObservingOptionInitial context:nil];
-//  
-//  [self.workingTitle addObserver:self forKeyPath:UITextFieldTextDidChangeNotification options:NSKeyValueObservingOptionInitial context:nil];
-//}
-//
-//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-//{
-//    if (_appDescription.text.length && _workingTitle.text.length) {
-//      [self animateButton];
-//    } else {
-//      [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
-//    }
-//}
-
 
 
 -(void)prepareForOnScreen
@@ -74,14 +63,26 @@
   [_appDescription setText:@""];
   [_workingTitle setText:@""];
   
+  if (self.ideaController.pendingIdea.workingTitle)
+  {
+    self.editingIdea = YES;
+  }
+  else
+  {
+    self.editingIdea = NO;
+  }
+  
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
+  self.workingTitle.text = self.ideaController.pendingIdea.workingTitle;
+  self.appDescription.text = self.ideaController.pendingIdea.appDescription;
+  
 }
 - (IBAction)backButton:(id)sender
 {
    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
 }
 
-- (IBAction)goHome:(id)sender
+- (IBAction)saveIdea:(id)sender
 {
   if ([self.workingTitle.text isEqualToString:@""] || [self.appDescription.text isEqualToString:@""])
   {
@@ -95,9 +96,14 @@
     
     self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
     self.ideaController.pendingIdea.appDescription = self.appDescription.text;
-    [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
-    
+    //if we are not in editing mode, we add the idea because it is a new idea
+    if (!self.editingIdea){
+      [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
+    }
+  
     [self.ideaController saveIdeas];
+    
+    self.ideaController.pendingIdea = nil;
     
     [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Stashed!"
                                                    description:@"Your new idea was successfully added."
@@ -114,6 +120,10 @@
 
  
 
+}
+- (IBAction)changeIdeaCategory:(id)sender
+{
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];  
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

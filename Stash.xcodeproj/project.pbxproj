@@ -20,16 +20,18 @@
 		D712B7661912E5780063B45B /* TPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7651912E5780063B45B /* TPHomeVC.m */; };
 		D712B7691912FDC20063B45B /* TPBrowseIdeasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */; };
 		D712B76C191311290063B45B /* TPIdeaDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D712B76B191311290063B45B /* TPIdeaDetailVC.m */; };
+		D735184C191C61510042076A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D735184B191C61510042076A /* CoreText.framework */; };
+		D735184E191C615A0042076A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D735184D191C615A0042076A /* Security.framework */; };
+		D7351850191C61660042076A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D735184F191C61660042076A /* SystemConfiguration.framework */; };
+		D7351856191C62000042076A /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7351852191C62000042076A /* HockeySDK.framework */; };
+		D7351857191C62000042076A /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D7351854191C62000042076A /* HockeySDK.xcconfig */; };
+		D7351858191C62000042076A /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D7351855191C62000042076A /* HockeySDKResources.bundle */; };
 		D74E74F61914485C00935100 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74EF1914485C00935100 /* TPKeyboardAvoidingCollectionView.m */; };
 		D74E74F71914485C00935100 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74F11914485C00935100 /* TPKeyboardAvoidingScrollView.m */; };
 		D74E74F81914485C00935100 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74F31914485C00935100 /* TPKeyboardAvoidingTableView.m */; };
 		D74E74F91914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E74F51914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		D74E74FD191456EE00935100 /* GlowAddButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D74E74FC191456EE00935100 /* GlowAddButton.png */; };
-		D779AD571919B15000D0200E /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D779AD511919B15000D0200E /* libTestFlight.a */; };
-		D779AD581919B15000D0200E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D779AD521919B15000D0200E /* README.md */; };
-		D779AD591919B15000D0200E /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = D779AD531919B15000D0200E /* release_notes.md */; };
 		D779AD5B1919B1D000D0200E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D779AD5A1919B1D000D0200E /* libz.dylib */; };
-		D7B1E25F191BEB9000413850 /* starforrest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B1E25E191BEB9000413850 /* starforrest@2x.png */; };
 		D7DFA66919117FD2001AE811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66819117FD2001AE811 /* Foundation.framework */; };
 		D7DFA66B19117FD2001AE811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66A19117FD2001AE811 /* CoreGraphics.framework */; };
 		D7DFA66D19117FD2001AE811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFA66C19117FD2001AE811 /* UIKit.framework */; };
@@ -103,6 +105,12 @@
 		D712B7681912FDC20063B45B /* TPBrowseIdeasCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBrowseIdeasCell.m; sourceTree = "<group>"; };
 		D712B76A191311290063B45B /* TPIdeaDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPIdeaDetailVC.h; sourceTree = "<group>"; };
 		D712B76B191311290063B45B /* TPIdeaDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPIdeaDetailVC.m; sourceTree = "<group>"; };
+		D735184B191C61510042076A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D735184D191C615A0042076A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D735184F191C61660042076A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7351852191C62000042076A /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		D7351854191C62000042076A /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		D7351855191C62000042076A /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		D74E74EE1914485C00935100 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		D74E74EF1914485C00935100 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		D74E74F01914485C00935100 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -112,14 +120,7 @@
 		D74E74F41914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		D74E74F51914485C00935100 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		D74E74FC191456EE00935100 /* GlowAddButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GlowAddButton.png; sourceTree = "<group>"; };
-		D779AD511919B15000D0200E /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		D779AD521919B15000D0200E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		D779AD531919B15000D0200E /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		D779AD541919B15000D0200E /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		D779AD551919B15000D0200E /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		D779AD561919B15000D0200E /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		D779AD5A1919B1D000D0200E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		D7B1E25E191BEB9000413850 /* starforrest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starforrest@2x.png"; sourceTree = "<group>"; };
 		D7DFA66519117FD2001AE811 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DFA66819117FD2001AE811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7DFA66A19117FD2001AE811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,11 +182,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7351850191C61660042076A /* SystemConfiguration.framework in Frameworks */,
+				D735184E191C615A0042076A /* Security.framework in Frameworks */,
+				D735184C191C61510042076A /* CoreText.framework in Frameworks */,
 				D779AD5B1919B1D000D0200E /* libz.dylib in Frameworks */,
-				D779AD571919B15000D0200E /* libTestFlight.a in Frameworks */,
 				D7DFA66B19117FD2001AE811 /* CoreGraphics.framework in Frameworks */,
 				D7DFA66D19117FD2001AE811 /* UIKit.framework in Frameworks */,
 				D7DFA66919117FD2001AE811 /* Foundation.framework in Frameworks */,
+				D7351856191C62000042076A /* HockeySDK.framework in Frameworks */,
 				5CA395550405474CB8773050 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,9 +227,27 @@
 		D710C04E19142C1800F6F372 /* BG Images */ = {
 			isa = PBXGroup;
 			children = (
-				D7B1E25E191BEB9000413850 /* starforrest@2x.png */,
 			);
 			name = "BG Images";
+			sourceTree = "<group>";
+		};
+		D7351851191C62000042076A /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				D7351852191C62000042076A /* HockeySDK.framework */,
+				D7351853191C62000042076A /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		D7351853191C62000042076A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7351854191C62000042076A /* HockeySDK.xcconfig */,
+				D7351855191C62000042076A /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D74E74FA19144A1B00935100 /* Avoid Keyboard */ = {
@@ -246,25 +268,10 @@
 		D74E74FB1914528100935100 /* Imported Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D779AD501919B15000D0200E /* TestFlightSDK3 */,
 				D74E74FA19144A1B00935100 /* Avoid Keyboard */,
 				D7E912F31919B72A0088BD76 /* Parallax */,
 			);
 			name = "Imported Classes";
-			sourceTree = "<group>";
-		};
-		D779AD501919B15000D0200E /* TestFlightSDK3 */ = {
-			isa = PBXGroup;
-			children = (
-				D779AD511919B15000D0200E /* libTestFlight.a */,
-				D779AD521919B15000D0200E /* README.md */,
-				D779AD531919B15000D0200E /* release_notes.md */,
-				D779AD541919B15000D0200E /* TestFlight+AsyncLogging.h */,
-				D779AD551919B15000D0200E /* TestFlight+ManualSessions.h */,
-				D779AD561919B15000D0200E /* TestFlight.h */,
-			);
-			name = TestFlightSDK3;
-			path = ../TestFlightSDK3;
 			sourceTree = "<group>";
 		};
 		D7ADF4E019137D3100869CD6 /* Browse */ = {
@@ -314,6 +321,10 @@
 		D7DFA66719117FD2001AE811 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7351851191C62000042076A /* HockeySDK.embeddedframework */,
+				D735184F191C61660042076A /* SystemConfiguration.framework */,
+				D735184D191C615A0042076A /* Security.framework */,
+				D735184B191C61510042076A /* CoreText.framework */,
 				D779AD5A1919B1D000D0200E /* libz.dylib */,
 				D7DFA66819117FD2001AE811 /* Foundation.framework */,
 				D7DFA66A19117FD2001AE811 /* CoreGraphics.framework */,
@@ -486,6 +497,7 @@
 				D7DFA66219117FD2001AE811 /* Frameworks */,
 				D7DFA66319117FD2001AE811 /* Resources */,
 				29662097A6AC4D0AB2002A36 /* Copy Pods Resources */,
+				D735184A191C5FD50042076A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -524,6 +536,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = potter.io;
 				TargetAttributes = {
+					D7DFA66419117FD2001AE811 = {
+						DevelopmentTeam = E9Y46C3GG3;
+					};
 					D7DFA68519117FD2001AE811 = {
 						TestTargetID = D7DFA66419117FD2001AE811;
 					};
@@ -556,9 +571,11 @@
 				D7F007191911C18300EB0C62 /* Navigation_Icon.png in Resources */,
 				D7F0070F1911C18300EB0C62 /* Business_Icon.png in Resources */,
 				D710C04D1914219900F6F372 /* PickACategoryNew.png in Resources */,
+				D7351858191C62000042076A /* HockeySDKResources.bundle in Resources */,
 				D710C03119139E6900F6F372 /* right_arrow.png in Resources */,
 				D7DFA68119117FD2001AE811 /* Images.xcassets in Resources */,
 				D7F007221911C18300EB0C62 /* Weather.png in Resources */,
+				D7351857191C62000042076A /* HockeySDK.xcconfig in Resources */,
 				D710C0391913A67F00F6F372 /* StashIt2.png in Resources */,
 				D7F0071C1911C18300EB0C62 /* Productivity_Icon.png in Resources */,
 				D7F0071B1911C18300EB0C62 /* Photography_Icon.png in Resources */,
@@ -576,14 +593,11 @@
 				D710C02319139C5600F6F372 /* Update_Add_Button.png in Resources */,
 				D7F007171911C18300EB0C62 /* Medical_Icon.png in Resources */,
 				D7F007101911C18300EB0C62 /* Education_Icon.png in Resources */,
-				D7B1E25F191BEB9000413850 /* starforrest@2x.png in Resources */,
-				D779AD591919B15000D0200E /* release_notes.md in Resources */,
 				D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */,
 				D710C03219139E6900F6F372 /* left_arrow.png in Resources */,
 				D7F007201911C18300EB0C62 /* Travel_Icon.png in Resources */,
 				D7F0071A1911C18300EB0C62 /* News_Icon.png in Resources */,
 				D710C02619139C7600F6F372 /* Stash_Logo_And_Tagline.png in Resources */,
-				D779AD581919B15000D0200E /* README.md in Resources */,
 				D710C02E19139C9600F6F372 /* Glowing_Small_Outer_Ring.png in Resources */,
 				D7F007121911C18300EB0C62 /* Finance_Icon.png in Resources */,
 				D7F007141911C18300EB0C62 /* FoodAndDrinkIcon.png in Resources */,
@@ -635,6 +649,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		D735184A191C5FD50042076A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -784,14 +811,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
 				INFOPLIST_FILE = "Stash/Stash-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TestFlightSDK3",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -803,14 +831,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stash/Stash-Prefix.pch";
 				INFOPLIST_FILE = "Stash/Stash-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/TestFlightSDK3",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

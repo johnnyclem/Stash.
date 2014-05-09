@@ -38,12 +38,21 @@
 
 - (IBAction)categorySelected:(id)sender
 {
+  if (self.ideaController.pendingIdea) {
+    UIButton *button = (UIButton *)sender;
+    self.ideaController.pendingIdea.categoryIcon = button.imageView.image;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"categorySelected" object:nil];
+
+  } else {
+
   TPIdea *idea = [TPIdea new];
   UIButton *button = (UIButton *)sender;
   idea.categoryIcon = button.imageView.image;
   self.ideaController.pendingIdea = idea;  
   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
   [[NSNotificationCenter defaultCenter] postNotificationName:@"categorySelected" object:nil];
+  }
 }
 
 

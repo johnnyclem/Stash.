@@ -3,12 +3,18 @@
     {
       "idiom" : "iphone",
       "scale" : "1x",
-      "filename" : "forrest@2x~iphone.png"
+      "filename" : "starforrestsmall.png"
     },
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "forrest-568h@2x.png"
+      "filename" : "starforrest.png"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "starforrest@2x.png",
+      "subtype" : "retina4",
+      "scale" : "2x"
     }
   ],
   "info" : {

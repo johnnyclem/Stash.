@@ -14,9 +14,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  /*Stash token for Testflight app */
-  
-  // [TestFlight takeOff:@"e4d543bc-7460-44b5-97eb-1f0c36a443a5"];
+  [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"eb02529dc5ae1108856ed5ff32b81b06"];
+  [[BITHockeyManager sharedHockeyManager] startManager];
+  [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+
   
   self.ideaController = [[TPIdeaController alloc] initWithArchive];
   

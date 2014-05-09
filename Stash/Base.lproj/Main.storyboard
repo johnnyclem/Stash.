@@ -100,7 +100,6 @@
                                 <state key="normal" image="Update_Browse_Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="Category_Selection"/>
                                 <state key="highlighted" image="Glowing_Browse_Button.png"/>
                                 <connections>
                                     <action selector="addNewIdea:" destination="YQQ-pC-rNq" eventType="touchUpInside" id="VyB-Ef-xv9"/>
@@ -175,7 +174,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="goHome:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="e6e-WP-3tc"/>
+                                            <action selector="saveIdea:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="8zN-CQ-Ct5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rom-7k-jvB" userLabel="Back Button">
@@ -193,6 +192,17 @@
                                         <rect key="frame" x="14" y="20" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E6g-6H-Qvd">
+                                        <rect key="frame" x="100" y="33" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeIdeaCategory:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="15o-C8-SeC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -482,7 +492,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="C2q-UO-eMI">
-                                <rect key="frame" x="50" y="310" width="220" height="200"/>
+                                <rect key="frame" x="50" y="280" width="220" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -504,6 +514,16 @@
                                 <rect key="frame" x="278" y="20" width="22" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dq5-1Z-32h">
+                                <rect key="frame" x="27" y="490" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="edit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editIdea:" destination="yWS-fc-btZ" eventType="touchUpInside" id="hQq-Wq-Qyd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -527,7 +547,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="EXH-57-TpY">
-                                <rect key="frame" x="0.0" y="0.0" width="327" height="568"/>
+                                <rect key="frame" x="0.0" y="59" width="327" height="509"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -535,11 +555,11 @@
                                     <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="60" maxX="20" maxY="20"/>
+                                    <inset key="sectionInset" minX="20" minY="40" maxX="20" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CIC-el-LKU" customClass="TPBrowseIdeasCell">
-                                        <rect key="frame" x="20" y="60" width="80" height="80"/>
+                                        <rect key="frame" x="124" y="40" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -556,6 +576,30 @@
                                         <gestureRecognizers/>
                                         <connections>
                                             <outlet property="iconImage" destination="3Ji-Cv-ClC" id="qUJ-I8-XAr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.20000000000000001" contentMode="center" reuseIdentifier="titleCell" id="dpW-uo-KUk" customClass="TPBrowseIdeasCell">
+                                        <rect key="frame" x="24" y="130" width="280" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cE6-Qj-n1x">
+                                                    <rect key="frame" x="7.5" y="0.0" width="260" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <size key="customSize" width="280" height="40"/>
+                                        <connections>
+                                            <outlet property="titeCellLabel" destination="cE6-Qj-n1x" id="uaS-NT-0PS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -575,15 +619,28 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="XBa-Ft-UvV" userLabel="Right Arrow">
-                                <rect key="frame" x="279" y="20" width="20" height="20"/>
+                                <rect key="frame" x="279" y="25" width="20" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eTf-PB-rY4">
+                                <rect key="frame" x="99" y="18" width="123" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Icon"/>
+                                    <segment title="Title"/>
+                                </segments>
+                                <color key="tintColor" red="0.086274512110000007" green="0.49411767719999999" blue="0.55277714420000001" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="chnageBrowseView:" destination="7qI-6S-Ph6" eventType="valueChanged" id="DBw-Iz-6Q9"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="collectionView" destination="EXH-57-TpY" id="52b-TK-TT0"/>
+                        <outlet property="toggleView" destination="eTf-PB-rY4" id="Y3q-jM-RTH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8a-UO-smm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -593,7 +650,6 @@
     </scenes>
     <resources>
         <image name="Business_Icon.png" width="134" height="134"/>
-        <image name="Category_Selection" width="540" height="76"/>
         <image name="Education_Icon.png" width="134" height="134"/>
         <image name="Entertainment_Icon.png" width="134" height="134"/>
         <image name="Finance_Icon.png" width="134" height="134"/>

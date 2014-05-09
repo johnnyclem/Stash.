@@ -41,7 +41,6 @@ static const int kStateKey;
 
 - (void)TPKeyboardAvoiding_keyboardWillShow:(NSNotification*)notification {
     TPKeyboardAvoidingState *state = self.keyboardAvoidingState;
-    
     if ( state.keyboardVisible ) {
         return;
     }
@@ -144,7 +143,7 @@ static const int kStateKey;
 
 -(void)TPKeyboardAvoiding_scrollToActiveTextField {
     TPKeyboardAvoidingState *state = self.keyboardAvoidingState;
-    
+
     if ( !state.keyboardVisible ) return;
     
     CGFloat visibleSpace = self.bounds.size.height - self.contentInset.top - self.contentInset.bottom;
@@ -163,6 +162,7 @@ static const int kStateKey;
 
 - (UIView*)TPKeyboardAvoiding_findFirstResponderBeneathView:(UIView*)view {
     // Search recursively for first responder
+
     for ( UIView *childView in view.subviews ) {
         if ( [childView respondsToSelector:@selector(isFirstResponder)] && [childView isFirstResponder] ) return childView;
         UIView *result = [self TPKeyboardAvoiding_findFirstResponderBeneathView:childView];

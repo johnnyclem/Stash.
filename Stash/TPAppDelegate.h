@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TPIdeaController.h"
+#import <HockeySDK/HockeySDK.h>
+
 
 @interface TPAppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) TPIdeaController *ideaController;

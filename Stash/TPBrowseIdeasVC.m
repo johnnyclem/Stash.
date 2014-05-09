@@ -13,7 +13,8 @@
 
 
 
-@interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate, UIGestureRecognizerDelegate>
+@interface TPBrowseIdeasVC () <UIGestureRecognizerDelegate, UIGestureRecognizerDelegate, UICollectionViewDelegateFlowLayout>
+@property (weak, nonatomic) IBOutlet UISegmentedControl *toggleView;
 
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -29,7 +30,8 @@
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
-
+  self.toggleView.selectedSegmentIndex = 0;
+  self.toggleView.tintColor = [UIColor colorWithRed:0.08 green:0.39 blue:0.47 alpha:1];
   
   // Gets notified when a new idea is added so it can reload the collection view
   [[NSNotificationCenter defaultCenter] addObserver:self
@@ -41,7 +43,6 @@
   longpress.minimumPressDuration = 0.5f;
   longpress.delaysTouchesBegan= YES;
   [self.collectionView addGestureRecognizer:longpress];
-  
   
 }
 
@@ -66,13 +67,48 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+  if (self.toggleView.selectedSegmentIndex == 0) {
+    TPBrowseIdeasCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
+    
+    cell.iconImage.image = idea.categoryIcon;
+    
+    return cell;
+  } else {
+    TPBrowseIdeasCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"titleCell" forIndexPath:indexPath];
+    TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
+    
+    cell.layer.borderColor = [[UIColor whiteColor] CGColor];
+    cell.layer.borderWidth= 2.0f;
+    cell.titeCellLabel.text = idea.workingTitle;
+
+    return cell;
+  }
+
   
-  TPBrowseIdeasCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-  TPIdea *idea = [self.ideaController.ideas objectAtIndex:indexPath.row];
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+  if (self.toggleView.selectedSegmentIndex == 0) {
+    return CGSizeMake(80, 80);
+    
+  } else{
   
-  cell.iconImage.image = idea.categoryIcon;
+    return CGSizeMake(280, 40);
+
+  }
   
-  return cell;
+}
+
+
+
+
+
+- (IBAction)chnageBrowseView:(id)sender {
+  [self.collectionView reloadData];
+  
+  
   
 }
 
