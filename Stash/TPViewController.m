@@ -87,7 +87,7 @@
   CGFloat width = CGRectGetWidth(self.view.frame);
   CGFloat height = CGRectGetHeight(self.view.frame);
   
-  [_scrollView scrollRectToVisible:CGRectMake(width *2, 0, width, height) animated:YES];
+  [_scrollView scrollRectToVisible:CGRectMake(width *4, 0, width, height) animated:YES];
   
   
 }

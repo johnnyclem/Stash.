@@ -224,13 +224,6 @@
 			name = "New Images";
 			sourceTree = "<group>";
 		};
-		D710C04E19142C1800F6F372 /* BG Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "BG Images";
-			sourceTree = "<group>";
-		};
 		D7351851191C62000042076A /* HockeySDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,7 +469,6 @@
 		D7F007321911DE1400EB0C62 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D710C04E19142C1800F6F372 /* BG Images */,
 				D710C02019139C4500F6F372 /* New Images */,
 				D7F006EC1911C18300EB0C62 /* Catagory Icons */,
 				D7F007011911C18300EB0C62 /* Home Screen */,
