@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-Canvas.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MBAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0738D7451BE0446B999D0F5A</key>
+		<key>319A024AA8A74C48BEE886CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90E986C407FF48DF89784136</key>
+		<key>6EFB4FF0571F4C88BBD95CDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ECF100EF5F7942A49F20BE5F</key>
+		<key>FC8D1422CFD648A89C8EC556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFE9AF24103B4B039DB6C998</key>
 		<dict>
 			<key>primary</key>
 			<true/>

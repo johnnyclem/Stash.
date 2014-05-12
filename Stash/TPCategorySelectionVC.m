@@ -7,12 +7,14 @@
 //
 
 #import "TPCategorySelectionVC.h"
+//#import ""
 #import "TPAppDelegate.h"
 #import "TPIdea.h"
 
 @interface TPCategorySelectionVC ()
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UILabel *categoryTitle;
+//@property (weak, nonatomic) IBOutlet CSAnimationView *animationView;
 
 
 @end
@@ -29,6 +31,8 @@
   
   self.categoryTitle.layer.borderColor = [[UIColor whiteColor] CGColor];
   self.categoryTitle.layer.borderWidth= 3.0f;
+  
+
   
   
 }

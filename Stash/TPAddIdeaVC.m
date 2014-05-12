@@ -31,11 +31,6 @@
 {
   [super viewDidLoad];
   
-//  [self animateButton];
-
-
-  
-  
   self.appDelegate = [[UIApplication sharedApplication] delegate];
   self.ideaController = self.appDelegate.ideaController;
   
@@ -58,10 +53,13 @@
 }
 
 
+
 -(void)prepareForOnScreen
 {
   [_appDescription setText:@""];
   [_workingTitle setText:@""];
+  [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
+
   
   if (self.ideaController.pendingIdea.workingTitle)
   {
@@ -96,6 +94,7 @@
     
     self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
     self.ideaController.pendingIdea.appDescription = self.appDescription.text;
+    
     //if we are not in editing mode, we add the idea because it is a new idea
     if (!self.editingIdea){
       [self.ideaController.ideas addObject:self.ideaController.pendingIdea];

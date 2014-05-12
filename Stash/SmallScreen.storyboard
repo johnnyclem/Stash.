@@ -585,8 +585,8 @@
         <image name="Fitness_Icon.png" width="134" height="134"/>
         <image name="FoodAndDrinkIcon.png" width="134" height="134"/>
         <image name="Games_Icon.png" width="134" height="134"/>
-        <image name="GlowAddButton.png" width="200" height="200"/>
-        <image name="Glowing_Browse_Button.png" width="240" height="240"/>
+        <image name="GlowAddButton.png" width="1042" height="1042"/>
+        <image name="Glowing_Browse_Button.png" width="1042" height="1042"/>
         <image name="Lifestyle_Icon.png" width="134" height="134"/>
         <image name="Medical_Icon.png" width="134" height="134"/>
         <image name="Music_Icon.png" width="134" height="134"/>
@@ -598,14 +598,14 @@
         <image name="SocialNetworking_Icon.png" width="134" height="134"/>
         <image name="Sports_Icon.png" width="134" height="134"/>
         <image name="StashIt2.png" width="132" height="78"/>
-        <image name="Stash_Logo_And_Tagline.png" width="379" height="159"/>
+        <image name="Stash_Logo_And_Tagline.png" width="1333" height="560"/>
         <image name="Travel_Icon.png" width="134" height="134"/>
         <image name="Update_Add_Button.png" width="200" height="200"/>
         <image name="Update_Browse_Button.png" width="200" height="200"/>
         <image name="Utility_Icon.png" width="134" height="134"/>
         <image name="Weather.png" width="134" height="134"/>
         <image name="left_arrow.png" width="328" height="230"/>
-        <image name="right_arrow.png" width="328" height="230"/>
+        <image name="right_arrow.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
