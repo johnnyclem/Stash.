@@ -13,7 +13,7 @@
 @property (nonatomic, weak) IBOutlet SWParallaxScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
 @property (weak, nonatomic) IBOutlet UIButton *browseButton;
-
+@property (nonatomic) BOOL addButtonDisabled;
 
 @end
 
@@ -25,6 +25,12 @@
   [super viewDidLoad];
   
     self.scrollView.delegate = self;
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(refreshInterface)
+                                               name:@"refreshHome"
+                                             object:nil];
+
 }
 
 //-(void)viewDidAppear:(BOOL)animated
@@ -35,17 +41,31 @@
 //  
 //}
 
+
+-(void)refreshInterface
+{
+  self.addButtonDisabled = NO;
+}
   
 
 - (IBAction)addNewIdea:(id)sender
 {
+  
   if ([sender tag] == 1) {
-//    [_addButton setEnabled:NO];
+    if (!self.addButtonDisabled)
+    {
+    self.addButtonDisabled = YES;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
-    
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareCategorySelect" object:nil];
+    }
     
   } else if ([sender tag] == 2) {
+    if (!self.addButtonDisabled)
+    {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareBrowseScreen" object:nil];
+
+    }
   }
 
 }

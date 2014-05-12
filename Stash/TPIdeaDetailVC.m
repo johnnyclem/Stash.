@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *appDescription;
 
 @property (weak, nonatomic) IBOutlet UIView *blueView;
+@property (nonatomic) BOOL buttonsDisabled;
+
 
 @end
 
@@ -46,12 +48,18 @@
   
 }
 - (IBAction)backButton:(id)sender {
+  if (!self.buttonsDisabled) {
+    self.buttonsDisabled = YES;
+  
   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareBrowseScreen" object:nil];
+    }
   
 }
 
 -(void)prepareForOnScreen
 {
+  self.buttonsDisabled = NO;
   self.appName.text = self.ideaController.mySelectedIdea.workingTitle;
   self.appIcon.image = self.ideaController.mySelectedIdea.categoryIcon;
   self.appDescription.text = self.ideaController.mySelectedIdea.appDescription;
@@ -62,42 +70,9 @@
 
 - (IBAction)editIdea:(id)sender {
   
-  self.ideaController.pendingIdea = self.ideaController.mySelectedIdea;
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"moveToAddIdea" object:nil];
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"editIdeaSelected" object:nil];
 
 }
 
-//- (id) initWithFrame:(CGRect)frame
-//{
-//  if ((self = [super initWithFrame:frame]))
-//  {
-//    [self setup];
-//  }
-//  return self;
-//}
-//
-//- (id) initWithCoder:(NSCoder *)coder
-//{
-//  if ((self = [super initWithCoder:coder]))
-//  {
-//    [self setup];
-//  }
-//  return self;
-//}
-//
-//- (void) setup
-//{
-//
-//    self.opaque = NO;
-//    self.backgroundColor = [UIColor clearColor];
-//    
-//    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:self.bounds];
-//    toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//    toolbar.barTintColor = self.tintColor;
-//    [self insertSubview:toolbar atIndex:0];
-//  
-//}
 
 
 @end

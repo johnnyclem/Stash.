@@ -62,6 +62,11 @@
                                                name:@"moveToAddIdea"
                                              object:nil];
   
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(scrollToAddIdea)
+                                               name:@"moveToDetailIdea"
+                                             object:nil];
+  
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -89,6 +94,15 @@
   
   [_scrollView scrollRectToVisible:CGRectMake(width *4, 0, width, height) animated:YES];
   
+  
+}
+
+-(void)scrollToIdeaDetail
+{
+  CGFloat width = CGRectGetWidth(self.view.frame);
+  CGFloat height = CGRectGetHeight(self.view.frame);
+  
+  [_scrollView scrollRectToVisible:CGRectMake(0, 0, width, height) animated:YES];
   
 }
 - (void)scrollRight

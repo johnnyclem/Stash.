@@ -17,7 +17,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *workingTitle;
 @property (weak, nonatomic) IBOutlet UITextView *appDescription;
 @property (weak, nonatomic) IBOutlet UIButton *stashButton;
-@property (nonatomic) BOOL editingIdea;
+
+
+@property (nonatomic) BOOL buttonsDisabled;
 
 
 
@@ -44,40 +46,33 @@
                                            selector:@selector(prepareForOnScreen)
                                                name:@"categorySelected"
                                              object:nil];
-  
-  [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(prepareForOnScreen)
-                                               name:@"editIdeaSelected"
-                                             object:nil];
+
 
 }
+
+
 
 
 
 -(void)prepareForOnScreen
 {
+  self.buttonsDisabled = NO;
   [_appDescription setText:@""];
   [_workingTitle setText:@""];
   [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
-
-  
-  if (self.ideaController.pendingIdea.workingTitle)
-  {
-    self.editingIdea = YES;
-  }
-  else
-  {
-    self.editingIdea = NO;
-  }
-  
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
-  self.workingTitle.text = self.ideaController.pendingIdea.workingTitle;
-  self.appDescription.text = self.ideaController.pendingIdea.appDescription;
+
   
 }
 - (IBAction)backButton:(id)sender
 {
+  if (!self.buttonsDisabled)
+  {
+    self.buttonsDisabled = YES;
    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareCategorySelect" object:nil];
+    
+  }
 }
 
 - (IBAction)saveIdea:(id)sender
@@ -89,16 +84,18 @@
                                                           type:TWMessageBarMessageTypeError duration:2.0f];
     return;
   } else {
+    if (!self.buttonsDisabled)
+    {
+      self.buttonsDisabled = YES;
     [self.workingTitle resignFirstResponder];
     [self.appDescription resignFirstResponder];
     
     self.ideaController.pendingIdea.workingTitle = self.workingTitle.text;
     self.ideaController.pendingIdea.appDescription = self.appDescription.text;
     
-    //if we are not in editing mode, we add the idea because it is a new idea
-    if (!self.editingIdea){
-      [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
-    }
+   
+    [self.ideaController.ideas addObject:self.ideaController.pendingIdea];
+    
   
     [self.ideaController saveIdeas];
     
@@ -113,10 +110,11 @@
       
       [[NSNotificationCenter defaultCenter] postNotificationName:@"mainView" object:nil];
       [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
+      [self.stashButton setTitle:@"Stash It" forState:UIControlStateNormal];
       NSLog(@"%lu", (unsigned long)self.ideaController.ideas.count);  });
   }
   
-
+  }
  
 
 }

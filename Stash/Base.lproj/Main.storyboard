@@ -223,6 +223,32 @@
             </objects>
             <point key="canvasLocation" x="608" y="1307"/>
         </scene>
+        <!--Edit Idea View Controller-->
+        <scene sceneID="h1H-9k-p8j">
+            <objects>
+                <viewController storyboardIdentifier="EditIdeaVC" id="4hA-s0-Nbb" customClass="TPEditIdeaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1M-pU-Mrc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bq8-oH-d6H">
+                                <rect key="frame" x="142" y="518" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissVC:" destination="4hA-s0-Nbb" eventType="touchUpInside" id="wfr-lz-aFo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYY-MR-zlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="1555"/>
+        </scene>
         <!--Select App Category-->
         <scene sceneID="nfZ-pA-EHG">
             <objects>
@@ -236,7 +262,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <state key="normal" image="Music_Icon.png">
+                                <state key="normal" image="music-icon.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -504,7 +530,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Education_Icon.png" id="CxB-W7-Hqp" userLabel="App Icon">
-                                <rect key="frame" x="96" y="76" width="128" height="128"/>
+                                <rect key="frame" x="100" y="84" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="C2q-UO-eMI">
@@ -681,6 +707,7 @@
         <image name="Utility_Icon.png" width="134" height="134"/>
         <image name="Weather.png" width="134" height="134"/>
         <image name="arrow_left.png" width="512" height="512"/>
+        <image name="music-icon.png" width="130" height="130"/>
         <image name="right_arrow.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

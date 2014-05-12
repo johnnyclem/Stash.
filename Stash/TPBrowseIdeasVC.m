@@ -19,6 +19,9 @@
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic) BOOL buttonsDisabled;
+
+
 @end
 
 @implementation TPBrowseIdeasVC
@@ -38,6 +41,11 @@
                                            selector:@selector(updateListOfIdeas)
                                                name:@"UpdateBrowseScreen"
                                              object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(prepareForOnScreen)
+                                               name:@"PrepareBrowseScreen"
+                                             object:nil];
 
   UILongPressGestureRecognizer *longpress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(deleteIdea:)];
   longpress.minimumPressDuration = 0.5f;
@@ -46,13 +54,26 @@
   
 }
 
+-(void)prepareForOnScreen
+{
+  
+  self.buttonsDisabled = NO;
+}
+
 -(void)updateListOfIdeas
 {
   [self.collectionView reloadData];
 }
 
 - (IBAction)backButton:(id)sender {
+  
+  if (!self.buttonsDisabled) {
+    self.buttonsDisabled = YES;
+  
   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshHome" object:nil];
+    }
+
   
 }
 

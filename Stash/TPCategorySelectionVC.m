@@ -14,8 +14,8 @@
 @interface TPCategorySelectionVC ()
 @property (weak, nonatomic) TPAppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UILabel *categoryTitle;
-//@property (weak, nonatomic) IBOutlet CSAnimationView *animationView;
 
+@property (nonatomic) BOOL buttonsDisabled;
 
 @end
 
@@ -32,12 +32,28 @@
   self.categoryTitle.layer.borderColor = [[UIColor whiteColor] CGColor];
   self.categoryTitle.layer.borderWidth= 3.0f;
   
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(prepareForOnScreen)
+                                               name:@"PrepareCategorySelect"
+                                             object:nil];
 
   
   
 }
+
+-(void)prepareForOnScreen
+{
+  self.buttonsDisabled = NO;
+}
+
 - (IBAction)BacktoHome:(id)sender {
+  if (!self.buttonsDisabled)
+  {
+    self.buttonsDisabled = YES;
    [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshHome" object:nil];
+  }
 }
 
 - (IBAction)categorySelected:(id)sender
@@ -47,6 +63,7 @@
     self.ideaController.pendingIdea.categoryIcon = button.imageView.image;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"categorySelected" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshHome" object:nil];
 
   } else {
 
@@ -56,6 +73,7 @@
   self.ideaController.pendingIdea = idea;  
   [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
   [[NSNotificationCenter defaultCenter] postNotificationName:@"categorySelected" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshHome" object:nil];
   }
 }
 

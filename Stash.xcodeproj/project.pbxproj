@@ -49,6 +49,44 @@
 		D7ECF5B81912B29F00FF7DE6 /* TPAddIdeaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5B71912B29F00FF7DE6 /* TPAddIdeaVC.m */; };
 		D7ECF5BB1912B2E100FF7DE6 /* TPIdeaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5BA1912B2E100FF7DE6 /* TPIdeaController.m */; };
 		D7ECF5C01912CE3200FF7DE6 /* TPBrowseIdeasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5BF1912CE3200FF7DE6 /* TPBrowseIdeasVC.m */; };
+		D7ED3BEA19216F4500563B84 /* hover-biz-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BD719216F4500563B84 /* hover-biz-icon.png */; };
+		D7ED3BEB19216F4500563B84 /* hover-camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BD819216F4500563B84 /* hover-camera-icon.png */; };
+		D7ED3BEC19216F4500563B84 /* hover-eat-drink-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BD919216F4500563B84 /* hover-eat-drink-icon.png */; };
+		D7ED3BED19216F4500563B84 /* hover-education-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDA19216F4500563B84 /* hover-education-icon.png */; };
+		D7ED3BEE19216F4500563B84 /* hover-entertainment-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDB19216F4500563B84 /* hover-entertainment-icon.png */; };
+		D7ED3BEF19216F4500563B84 /* hover-finacne-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDC19216F4500563B84 /* hover-finacne-icon.png */; };
+		D7ED3BF019216F4500563B84 /* hover-fitness-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDD19216F4500563B84 /* hover-fitness-icon.png */; };
+		D7ED3BF119216F4500563B84 /* hover-game-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDE19216F4500563B84 /* hover-game-icon.png */; };
+		D7ED3BF219216F4500563B84 /* hover-health-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BDF19216F4500563B84 /* hover-health-icon.png */; };
+		D7ED3BF319216F4500563B84 /* hover-lifestyle-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE019216F4500563B84 /* hover-lifestyle-icon.png */; };
+		D7ED3BF419216F4500563B84 /* hover-mapping-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE119216F4500563B84 /* hover-mapping-icon.png */; };
+		D7ED3BF519216F4500563B84 /* hover-music-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE219216F4500563B84 /* hover-music-icon.png */; };
+		D7ED3BF619216F4500563B84 /* hover-news-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE319216F4500563B84 /* hover-news-icon.png */; };
+		D7ED3BF719216F4500563B84 /* hover-productivity-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE419216F4500563B84 /* hover-productivity-icon.png */; };
+		D7ED3BF819216F4500563B84 /* hover-resource-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE519216F4500563B84 /* hover-resource-icon.png */; };
+		D7ED3BF919216F4500563B84 /* hover-social-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE619216F4500563B84 /* hover-social-icon.png */; };
+		D7ED3BFA19216F4500563B84 /* hover-sports-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE719216F4500563B84 /* hover-sports-icon.png */; };
+		D7ED3BFB19216F4500563B84 /* hover-utility-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE819216F4500563B84 /* hover-utility-icon.png */; };
+		D7ED3BFC19216F4500563B84 /* hover-weather-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BE919216F4500563B84 /* hover-weather-icon.png */; };
+		D7ED3C1119216F6600563B84 /* biz-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BFE19216F6600563B84 /* biz-icon.png */; };
+		D7ED3C1219216F6600563B84 /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3BFF19216F6600563B84 /* camera-icon.png */; };
+		D7ED3C1319216F6600563B84 /* eat-drink-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0019216F6600563B84 /* eat-drink-icon.png */; };
+		D7ED3C1419216F6600563B84 /* education-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0119216F6600563B84 /* education-icon.png */; };
+		D7ED3C1519216F6600563B84 /* entertainment-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0219216F6600563B84 /* entertainment-icon.png */; };
+		D7ED3C1619216F6600563B84 /* finance-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0319216F6600563B84 /* finance-icon.png */; };
+		D7ED3C1719216F6600563B84 /* fitness-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0419216F6600563B84 /* fitness-icon.png */; };
+		D7ED3C1819216F6600563B84 /* game-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0519216F6600563B84 /* game-icon.png */; };
+		D7ED3C1919216F6600563B84 /* health-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0619216F6600563B84 /* health-icon.png */; };
+		D7ED3C1A19216F6600563B84 /* lifestyle-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0719216F6600563B84 /* lifestyle-icon.png */; };
+		D7ED3C1B19216F6600563B84 /* mapping-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0819216F6600563B84 /* mapping-icon.png */; };
+		D7ED3C1C19216F6600563B84 /* music-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0919216F6600563B84 /* music-icon.png */; };
+		D7ED3C1D19216F6600563B84 /* news-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0A19216F6600563B84 /* news-icon.png */; };
+		D7ED3C1E19216F6600563B84 /* productivity-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0B19216F6600563B84 /* productivity-icon.png */; };
+		D7ED3C1F19216F6600563B84 /* resource-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0C19216F6600563B84 /* resource-icon.png */; };
+		D7ED3C2019216F6600563B84 /* social-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0D19216F6600563B84 /* social-icon.png */; };
+		D7ED3C2119216F6600563B84 /* sports-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0E19216F6600563B84 /* sports-icon.png */; };
+		D7ED3C2219216F6600563B84 /* utility-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C0F19216F6600563B84 /* utility-icon.png */; };
+		D7ED3C2319216F6600563B84 /* weather-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7ED3C1019216F6600563B84 /* weather-icon.png */; };
 		D7F0070F1911C18300EB0C62 /* Business_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F006ED1911C18300EB0C62 /* Business_Icon.png */; };
 		D7F007101911C18300EB0C62 /* Education_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F006EE1911C18300EB0C62 /* Education_Icon.png */; };
 		D7F007121911C18300EB0C62 /* Finance_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F006F01911C18300EB0C62 /* Finance_Icon.png */; };
@@ -145,6 +183,44 @@
 		D7ECF5BA1912B2E100FF7DE6 /* TPIdeaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPIdeaController.m; sourceTree = "<group>"; };
 		D7ECF5BE1912CE3200FF7DE6 /* TPBrowseIdeasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBrowseIdeasVC.h; sourceTree = "<group>"; };
 		D7ECF5BF1912CE3200FF7DE6 /* TPBrowseIdeasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBrowseIdeasVC.m; sourceTree = "<group>"; };
+		D7ED3BD719216F4500563B84 /* hover-biz-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-biz-icon.png"; sourceTree = "<group>"; };
+		D7ED3BD819216F4500563B84 /* hover-camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-camera-icon.png"; sourceTree = "<group>"; };
+		D7ED3BD919216F4500563B84 /* hover-eat-drink-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-eat-drink-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDA19216F4500563B84 /* hover-education-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-education-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDB19216F4500563B84 /* hover-entertainment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-entertainment-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDC19216F4500563B84 /* hover-finacne-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-finacne-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDD19216F4500563B84 /* hover-fitness-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-fitness-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDE19216F4500563B84 /* hover-game-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-game-icon.png"; sourceTree = "<group>"; };
+		D7ED3BDF19216F4500563B84 /* hover-health-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-health-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE019216F4500563B84 /* hover-lifestyle-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-lifestyle-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE119216F4500563B84 /* hover-mapping-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-mapping-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE219216F4500563B84 /* hover-music-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-music-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE319216F4500563B84 /* hover-news-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-news-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE419216F4500563B84 /* hover-productivity-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-productivity-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE519216F4500563B84 /* hover-resource-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-resource-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE619216F4500563B84 /* hover-social-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-social-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE719216F4500563B84 /* hover-sports-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-sports-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE819216F4500563B84 /* hover-utility-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-utility-icon.png"; sourceTree = "<group>"; };
+		D7ED3BE919216F4500563B84 /* hover-weather-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hover-weather-icon.png"; sourceTree = "<group>"; };
+		D7ED3BFE19216F6600563B84 /* biz-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biz-icon.png"; sourceTree = "<group>"; };
+		D7ED3BFF19216F6600563B84 /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0019216F6600563B84 /* eat-drink-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eat-drink-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0119216F6600563B84 /* education-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0219216F6600563B84 /* entertainment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entertainment-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0319216F6600563B84 /* finance-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finance-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0419216F6600563B84 /* fitness-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fitness-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0519216F6600563B84 /* game-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0619216F6600563B84 /* health-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "health-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0719216F6600563B84 /* lifestyle-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lifestyle-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0819216F6600563B84 /* mapping-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapping-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0919216F6600563B84 /* music-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0A19216F6600563B84 /* news-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0B19216F6600563B84 /* productivity-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "productivity-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0C19216F6600563B84 /* resource-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resource-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0D19216F6600563B84 /* social-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0E19216F6600563B84 /* sports-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sports-icon.png"; sourceTree = "<group>"; };
+		D7ED3C0F19216F6600563B84 /* utility-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "utility-icon.png"; sourceTree = "<group>"; };
+		D7ED3C1019216F6600563B84 /* weather-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weather-icon.png"; sourceTree = "<group>"; };
 		D7F006ED1911C18300EB0C62 /* Business_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Business_Icon.png; sourceTree = "<group>"; };
 		D7F006EE1911C18300EB0C62 /* Education_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Education_Icon.png; sourceTree = "<group>"; };
 		D7F006F01911C18300EB0C62 /* Finance_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finance_Icon.png; sourceTree = "<group>"; };
@@ -414,6 +490,58 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		D7ED3BD619216F4500563B84 /* hover */ = {
+			isa = PBXGroup;
+			children = (
+				D7ED3BD719216F4500563B84 /* hover-biz-icon.png */,
+				D7ED3BD819216F4500563B84 /* hover-camera-icon.png */,
+				D7ED3BD919216F4500563B84 /* hover-eat-drink-icon.png */,
+				D7ED3BDA19216F4500563B84 /* hover-education-icon.png */,
+				D7ED3BDB19216F4500563B84 /* hover-entertainment-icon.png */,
+				D7ED3BDC19216F4500563B84 /* hover-finacne-icon.png */,
+				D7ED3BDD19216F4500563B84 /* hover-fitness-icon.png */,
+				D7ED3BDE19216F4500563B84 /* hover-game-icon.png */,
+				D7ED3BDF19216F4500563B84 /* hover-health-icon.png */,
+				D7ED3BE019216F4500563B84 /* hover-lifestyle-icon.png */,
+				D7ED3BE119216F4500563B84 /* hover-mapping-icon.png */,
+				D7ED3BE219216F4500563B84 /* hover-music-icon.png */,
+				D7ED3BE319216F4500563B84 /* hover-news-icon.png */,
+				D7ED3BE419216F4500563B84 /* hover-productivity-icon.png */,
+				D7ED3BE519216F4500563B84 /* hover-resource-icon.png */,
+				D7ED3BE619216F4500563B84 /* hover-social-icon.png */,
+				D7ED3BE719216F4500563B84 /* hover-sports-icon.png */,
+				D7ED3BE819216F4500563B84 /* hover-utility-icon.png */,
+				D7ED3BE919216F4500563B84 /* hover-weather-icon.png */,
+			);
+			path = hover;
+			sourceTree = "<group>";
+		};
+		D7ED3BFD19216F6600563B84 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				D7ED3BFE19216F6600563B84 /* biz-icon.png */,
+				D7ED3BFF19216F6600563B84 /* camera-icon.png */,
+				D7ED3C0019216F6600563B84 /* eat-drink-icon.png */,
+				D7ED3C0119216F6600563B84 /* education-icon.png */,
+				D7ED3C0219216F6600563B84 /* entertainment-icon.png */,
+				D7ED3C0319216F6600563B84 /* finance-icon.png */,
+				D7ED3C0419216F6600563B84 /* fitness-icon.png */,
+				D7ED3C0519216F6600563B84 /* game-icon.png */,
+				D7ED3C0619216F6600563B84 /* health-icon.png */,
+				D7ED3C0719216F6600563B84 /* lifestyle-icon.png */,
+				D7ED3C0819216F6600563B84 /* mapping-icon.png */,
+				D7ED3C0919216F6600563B84 /* music-icon.png */,
+				D7ED3C0A19216F6600563B84 /* news-icon.png */,
+				D7ED3C0B19216F6600563B84 /* productivity-icon.png */,
+				D7ED3C0C19216F6600563B84 /* resource-icon.png */,
+				D7ED3C0D19216F6600563B84 /* social-icon.png */,
+				D7ED3C0E19216F6600563B84 /* sports-icon.png */,
+				D7ED3C0F19216F6600563B84 /* utility-icon.png */,
+				D7ED3C1019216F6600563B84 /* weather-icon.png */,
+			);
+			path = standard;
+			sourceTree = "<group>";
+		};
 		D7F006EC1911C18300EB0C62 /* Catagory Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +580,8 @@
 		D7F007321911DE1400EB0C62 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D7ED3BFD19216F6600563B84 /* standard */,
+				D7ED3BD619216F4500563B84 /* hover */,
 				D710C02019139C4500F6F372 /* New Images */,
 				D7F006EC1911C18300EB0C62 /* Catagory Icons */,
 				D7F007011911C18300EB0C62 /* Home Screen */,
@@ -543,38 +673,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7F007191911C18300EB0C62 /* Navigation_Icon.png in Resources */,
+				D7ED3C1719216F6600563B84 /* fitness-icon.png in Resources */,
 				D7F0070F1911C18300EB0C62 /* Business_Icon.png in Resources */,
+				D7ED3C1119216F6600563B84 /* biz-icon.png in Resources */,
 				D72C705E191EA3C60033B879 /* right_arrow.png in Resources */,
+				D7ED3C1B19216F6600563B84 /* mapping-icon.png in Resources */,
 				D7351858191C62000042076A /* HockeySDKResources.bundle in Resources */,
 				D787F86F191DFC5800110620 /* Glowing_Browse_Button.png in Resources */,
+				D7ED3C1619216F6600563B84 /* finance-icon.png in Resources */,
 				D7DFA68119117FD2001AE811 /* Images.xcassets in Resources */,
 				D72C705F191EA3C60033B879 /* arrow_left.png in Resources */,
+				D7ED3BF319216F4500563B84 /* hover-lifestyle-icon.png in Resources */,
+				D7ED3BFB19216F4500563B84 /* hover-utility-icon.png in Resources */,
 				D787F871191DFD1A00110620 /* GlowAddButton.png in Resources */,
+				D7ED3C1A19216F6600563B84 /* lifestyle-icon.png in Resources */,
+				D7ED3C2219216F6600563B84 /* utility-icon.png in Resources */,
+				D7ED3BEB19216F4500563B84 /* hover-camera-icon.png in Resources */,
 				D7F007221911C18300EB0C62 /* Weather.png in Resources */,
 				D7351857191C62000042076A /* HockeySDK.xcconfig in Resources */,
+				D7ED3BF819216F4500563B84 /* hover-resource-icon.png in Resources */,
 				D7F0071C1911C18300EB0C62 /* Productivity_Icon.png in Resources */,
+				D7ED3BFA19216F4500563B84 /* hover-sports-icon.png in Resources */,
+				D7ED3BEF19216F4500563B84 /* hover-finacne-icon.png in Resources */,
+				D7ED3C1F19216F6600563B84 /* resource-icon.png in Resources */,
+				D7ED3BEE19216F4500563B84 /* hover-entertainment-icon.png in Resources */,
+				D7ED3C2019216F6600563B84 /* social-icon.png in Resources */,
 				D7F0071B1911C18300EB0C62 /* Photography_Icon.png in Resources */,
 				D7F0071D1911C18300EB0C62 /* Reference_Icon.png in Resources */,
 				D7F007231911C18300EB0C62 /* Stash_Icon.png in Resources */,
 				D7F007161911C18300EB0C62 /* Lifestyle_Icon.png in Resources */,
+				D7ED3BF019216F4500563B84 /* hover-fitness-icon.png in Resources */,
+				D7ED3BF119216F4500563B84 /* hover-game-icon.png in Resources */,
 				D7DFA67319117FD2001AE811 /* InfoPlist.strings in Resources */,
 				D7DFA67C19117FD2001AE811 /* Main.storyboard in Resources */,
+				D7ED3BF919216F4500563B84 /* hover-social-icon.png in Resources */,
+				D7ED3BF519216F4500563B84 /* hover-music-icon.png in Resources */,
+				D7ED3C2119216F6600563B84 /* sports-icon.png in Resources */,
+				D7ED3C1E19216F6600563B84 /* productivity-icon.png in Resources */,
 				D7F007131911C18300EB0C62 /* Fitness_Icon.png in Resources */,
+				D7ED3BEC19216F4500563B84 /* hover-eat-drink-icon.png in Resources */,
+				D7ED3C1D19216F6600563B84 /* news-icon.png in Resources */,
+				D7ED3C2319216F6600563B84 /* weather-icon.png in Resources */,
 				D7F0071F1911C18300EB0C62 /* Sports_Icon.png in Resources */,
+				D7ED3C1919216F6600563B84 /* health-icon.png in Resources */,
+				D7ED3BF719216F4500563B84 /* hover-productivity-icon.png in Resources */,
+				D7ED3BEA19216F4500563B84 /* hover-biz-icon.png in Resources */,
+				D7ED3C1319216F6600563B84 /* eat-drink-icon.png in Resources */,
 				D7F007151911C18300EB0C62 /* Games_Icon.png in Resources */,
 				D710C02319139C5600F6F372 /* Update_Add_Button.png in Resources */,
 				D7F007171911C18300EB0C62 /* Medical_Icon.png in Resources */,
+				D7ED3BF219216F4500563B84 /* hover-health-icon.png in Resources */,
 				D7F007101911C18300EB0C62 /* Education_Icon.png in Resources */,
 				D787F86D191DFB5700110620 /* Stash_Logo_And_Tagline.png in Resources */,
 				D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */,
 				D7F007201911C18300EB0C62 /* Travel_Icon.png in Resources */,
+				D7ED3C1219216F6600563B84 /* camera-icon.png in Resources */,
 				D7F0071A1911C18300EB0C62 /* News_Icon.png in Resources */,
 				D7F007121911C18300EB0C62 /* Finance_Icon.png in Resources */,
 				D7F007141911C18300EB0C62 /* FoodAndDrinkIcon.png in Resources */,
+				D7ED3BED19216F4500563B84 /* hover-education-icon.png in Resources */,
 				D7F0071E1911C18300EB0C62 /* SocialNetworking_Icon.png in Resources */,
 				D7F007211911C18300EB0C62 /* Utility_Icon.png in Resources */,
+				D7ED3C1419216F6600563B84 /* education-icon.png in Resources */,
+				D7ED3C1519216F6600563B84 /* entertainment-icon.png in Resources */,
+				D7ED3C1C19216F6600563B84 /* music-icon.png in Resources */,
+				D7ED3C1819216F6600563B84 /* game-icon.png in Resources */,
 				D759C9311921250A00B5155F /* Entertainment_Icon.png in Resources */,
+				D7ED3BFC19216F4500563B84 /* hover-weather-icon.png in Resources */,
 				D7FE3011191985E900A4EA18 /* SmallScreen.storyboard in Resources */,
+				D7ED3BF619216F4500563B84 /* hover-news-icon.png in Resources */,
+				D7ED3BF419216F4500563B84 /* hover-mapping-icon.png in Resources */,
 				D7F007181911C18300EB0C62 /* Music_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
