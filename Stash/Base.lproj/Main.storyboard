@@ -326,7 +326,6 @@
                                 <state key="normal" title="Button" image="finacne-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="hover-finance-icon.png"/>
                                 <state key="highlighted" image="hover-finance-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="wBv-KF-i87"/>
@@ -361,7 +360,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="hover-weather-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="tjJ-RY-rTv"/>
                                 </connections>
@@ -372,7 +370,6 @@
                                 <state key="normal" title="Button" image="health-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="hover-health-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="29V-9g-ngA"/>
                                 </connections>
@@ -383,7 +380,6 @@
                                 <state key="normal" title="Button" image="utility-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="hover-utility-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="YWe-9Q-muc"/>
                                 </connections>
@@ -394,7 +390,6 @@
                                 <state key="normal" image="social-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="hover-social-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="6gY-cw-kt4"/>
                                 </connections>
@@ -427,7 +422,6 @@
                                 <state key="normal" image="news-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="hover-news-icon"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="l9d-Qa-lxA"/>
                                 </connections>
@@ -438,7 +432,6 @@
                                 <state key="normal" image="sports-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" image="sports-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="UiH-EJ-er6"/>
                                 </connections>
@@ -701,14 +694,9 @@
         <image name="hover-entertainment-icon.png" width="260" height="260"/>
         <image name="hover-finance-icon.png" width="260" height="260"/>
         <image name="hover-game-icon.png" width="260" height="260"/>
-        <image name="hover-health-icon.png" width="260" height="260"/>
         <image name="hover-mapping-icon.png" width="260" height="260"/>
-        <image name="hover-news-icon" width="260" height="260"/>
         <image name="hover-productivity-icon.png" width="260" height="260"/>
         <image name="hover-resources-icon.png" width="260" height="260"/>
-        <image name="hover-social-icon.png" width="260" height="260"/>
-        <image name="hover-utility-icon.png" width="260" height="260"/>
-        <image name="hover-weather-icon.png" width="260" height="260"/>
         <image name="lifestyle-icon" width="260" height="260"/>
         <image name="mapping-icon" width="260" height="260"/>
         <image name="music-icon" width="260" height="260"/>
@@ -718,7 +706,6 @@
         <image name="right_arrow.png" width="512" height="512"/>
         <image name="social-icon" width="260" height="260"/>
         <image name="sports-icon" width="260" height="260"/>
-        <image name="sports-icon.png" width="260" height="260"/>
         <image name="travel-icon" width="260" height="260"/>
         <image name="utility-icon" width="260" height="260"/>
         <image name="weather-icon" width="260" height="260"/>
