@@ -133,7 +133,7 @@
                                         <rect key="frame" x="100" y="33" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="DHE-1w-8iC" userLabel="Working Title">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="DHE-1w-8iC" userLabel="Working Title">
                                         <rect key="frame" x="51" y="211" width="219" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -222,32 +222,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I54-7e-pAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="608" y="1307"/>
-        </scene>
-        <!--Edit Idea View Controller-->
-        <scene sceneID="h1H-9k-p8j">
-            <objects>
-                <viewController storyboardIdentifier="EditIdeaVC" id="4hA-s0-Nbb" customClass="TPEditIdeaViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="j1M-pU-Mrc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bq8-oH-d6H">
-                                <rect key="frame" x="142" y="518" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissVC:" destination="4hA-s0-Nbb" eventType="touchUpInside" id="wfr-lz-aFo"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nYY-MR-zlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1045" y="1555"/>
         </scene>
         <!--Select App Category-->
         <scene sceneID="nfZ-pA-EHG">
@@ -519,21 +493,22 @@
                                             <action selector="editIdea:" destination="yWS-fc-btZ" eventType="touchUpInside" id="hQq-Wq-Qyd"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stash." textAlignment="center" minimumFontSize="17" id="jkL-ea-8GI">
+                                        <rect key="frame" x="29" y="174" width="222" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.054901960784313725" green="0.38823529411764707" blue="0.47843137254901957" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dr-eC-Wou" userLabel="App Name">
-                                <rect key="frame" x="50" y="212.5" width="220" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Education_Icon.png" id="CxB-W7-Hqp" userLabel="App Icon">
                                 <rect key="frame" x="100" y="84" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="C2q-UO-eMI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="C2q-UO-eMI">
                                 <rect key="frame" x="50" y="280" width="220" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -562,8 +537,9 @@
                     <connections>
                         <outlet property="appDescription" destination="C2q-UO-eMI" id="b19-lK-GFj"/>
                         <outlet property="appIcon" destination="CxB-W7-Hqp" id="0uD-a1-D8K"/>
-                        <outlet property="appName" destination="5dr-eC-Wou" id="372-FW-spn"/>
+                        <outlet property="appName" destination="jkL-ea-8GI" id="J1E-2O-4Df"/>
                         <outlet property="blueView" destination="LfZ-xY-kU5" id="ekh-vG-Sue"/>
+                        <outlet property="editButton" destination="Dq5-1Z-32h" id="chp-QW-rMo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9q-3g-qe9" userLabel="First Responder" sceneMemberID="firstResponder"/>

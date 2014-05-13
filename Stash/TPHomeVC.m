@@ -57,6 +57,7 @@
     self.addButtonDisabled = YES;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
       [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareCategorySelect" object:nil];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"clearNewIdeaTextFields" object:nil];
     }
     
   } else if ([sender tag] == 2) {
@@ -64,6 +65,8 @@
     {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareBrowseScreen" object:nil];
+    
+
 
     }
   }

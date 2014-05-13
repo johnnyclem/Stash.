@@ -1,15 +1,12 @@
 PODS:
-  - Canvas (0.1.1)
   - MBAlertView (1.1.0)
   - TWMessageBarManager (1.6.0)
 
 DEPENDENCIES:
-  - Canvas (~> 0.1)
   - MBAlertView (~> 1.1.0)
   - TWMessageBarManager (~> 1.6.0)
 
 SPEC CHECKSUMS:
-  Canvas: f1911025fc9ec9c7339df6e4399c90c87ce6b631
   MBAlertView: b966a77a32f2c366e1285ad95998c5187c1dc2ae
   TWMessageBarManager: 0c48a47b6a0f682659042470d36a93864ee4a9b5
 

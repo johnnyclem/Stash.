@@ -30,7 +30,7 @@
   self.ideaController = self.appDelegate.ideaController;
   
   self.categoryTitle.layer.borderColor = [[UIColor whiteColor] CGColor];
-  self.categoryTitle.layer.borderWidth= 3.0f;
+  self.categoryTitle.layer.borderWidth= 2.0f;
   
   
   [[NSNotificationCenter defaultCenter] addObserver:self

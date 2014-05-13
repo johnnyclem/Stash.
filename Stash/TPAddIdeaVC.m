@@ -46,19 +46,26 @@
                                            selector:@selector(prepareForOnScreen)
                                                name:@"categorySelected"
                                              object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(addNewIdea)
+                                               name:@"clearNewIdeaTextFields"
+                                             object:nil];
 
 
 }
 
 
-
+-(void)addNewIdea
+{
+  [_appDescription setText:@""];
+  [_workingTitle setText:@""];
+}
 
 
 -(void)prepareForOnScreen
 {
   self.buttonsDisabled = NO;
-  [_appDescription setText:@""];
-  [_workingTitle setText:@""];
   [self.stashButton.layer removeAnimationForKey:@"animateOpacity"];
   self.selectedCategoryIcon.image = self.ideaController.pendingIdea.categoryIcon;
 
