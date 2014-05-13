@@ -6,13 +6,16 @@
 //  Copyright (c) 2014 potter.io. All rights reserved.
 //
 
-#import "TPHomeVC.h"
 #import "TPViewController.h"
+#import "TPHomeVC.h"
+
 
 @interface TPHomeVC () <UIScrollViewDelegate>
-@property (nonatomic, weak) IBOutlet SWParallaxScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet SWParallaxScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
 @property (weak, nonatomic) IBOutlet UIButton *browseButton;
+
 @property (nonatomic) BOOL addButtonDisabled;
 
 @end
@@ -24,7 +27,7 @@
 {
   [super viewDidLoad];
   
-    self.scrollView.delegate = self;
+   self.scrollView.delegate = self;
   
   [[NSNotificationCenter defaultCenter] addObserver:self
                                            selector:@selector(refreshInterface)
@@ -33,13 +36,7 @@
 
 }
 
-//-(void)viewDidAppear:(BOOL)animated
-//{
-//  [super viewDidAppear:animated];
-//  [_addButton setEnabled:YES];
-//
-//  
-//}
+
 
 
 -(void)refreshInterface
@@ -51,28 +48,33 @@
 - (IBAction)addNewIdea:(id)sender
 {
   
-  if ([sender tag] == 1) {
+  if ([sender tag] == 1)
+  {
+    
     if (!self.addButtonDisabled)
     {
+      
     self.addButtonDisabled = YES;
+      
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveRight" object:nil];
-      [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareCategorySelect" object:nil];
-      [[NSNotificationCenter defaultCenter] postNotificationName:@"clearNewIdeaTextFields" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareCategorySelect" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"clearNewIdeaTextFields" object:nil];
+      
     }
     
-  } else if ([sender tag] == 2) {
+  } else if ([sender tag] == 2)
+  {
+    
     if (!self.addButtonDisabled)
     {
+      
     [[NSNotificationCenter defaultCenter] postNotificationName:@"moveLeft" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PrepareBrowseScreen" object:nil];
-    
-
 
     }
   }
 
 }
-
 
 
 @end

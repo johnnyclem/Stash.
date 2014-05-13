@@ -84,14 +84,12 @@
     self.appDescription.userInteractionEnabled = YES;
     self.appDescription.layer.borderColor = [[UIColor orangeColor] CGColor];
     self.appDescription.layer.borderWidth= 3.0f;
-    [self.editButton setTitle:@"Done." forState:UIControlStateNormal];
-
+    [self.editButton setTitle:@"d o n e" forState:UIControlStateNormal];
   }
   else
   {
     self.isEditing = NO;
-    [self.editButton setTitle:@"Edit" forState:UIControlStateNormal];
-    //self.editButton.titleLabel.text = @"Done";
+    [self.editButton setTitle:@"e d i t" forState:UIControlStateNormal];
     self.appName.userInteractionEnabled = NO;
     self.appDescription.userInteractionEnabled = NO;
     self.appDescription.layer.borderColor = [[UIColor clearColor] CGColor];
@@ -104,16 +102,6 @@
   
   
   }
-  
-//-(void)saveEdit
-//  {
-//  [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateBrowseScreen" object:nil];
-//    
-//    
-//  }
-  
-  
-  
 
 }
 #pragma mark - Keyboard Handler
