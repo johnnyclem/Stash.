@@ -32,7 +32,7 @@
     NSLog(@"User has 4 inch screen.");
   } else {
     
-    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"SmallScreen" bundle:nil];
+    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Small" bundle:nil];
     TPViewController *rootViewController = [mainStoryBoard instantiateInitialViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.rootViewController = rootViewController;

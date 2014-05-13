@@ -59,7 +59,7 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </view>
                     <size key="freeformSize" width="1010" height="568"/>
                     <connections>
@@ -79,12 +79,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stash_Logo_And_Tagline.png" id="7mi-eR-0Wf">
-                                <rect key="frame" x="66" y="42" width="189" height="79"/>
+                                <rect key="frame" x="66" y="20" width="189" height="90"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Drh-I3-tz8" userLabel="Add Idea Button">
-                                <rect key="frame" x="98" y="148" width="124" height="124"/>
+                                <rect key="frame" x="97" y="148" width="124" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0TD-B8-t4C" userLabel="Browse Ideas Button">
-                                <rect key="frame" x="98" y="312.5" width="125" height="125"/>
+                                <rect key="frame" x="97" y="305" width="125" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Update_Browse_Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,10 +108,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="Drh-I3-tz8" id="g2F-M6-MKh"/>
+                        <outlet property="browseButton" destination="0TD-B8-t4C" id="Imt-VA-LGF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJM-8T-DbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="-153"/>
+            <point key="canvasLocation" x="1010" y="-11"/>
         </scene>
         <!--Add Idea-->
         <scene sceneID="Prv-af-ryx">
@@ -125,12 +129,12 @@
                                 <rect key="frame" x="0.0" y="-88" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Music_Icon.png" id="bJl-2b-a4Q" userLabel="Large Icon">
-                                        <rect key="frame" x="110" y="114" width="100" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bJl-2b-a4Q" userLabel="Large Icon">
+                                        <rect key="frame" x="100" y="105" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="DHE-1w-8iC" userLabel="Working Title">
-                                        <rect key="frame" x="51" y="261" width="219" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="DHE-1w-8iC" userLabel="Working Title">
+                                        <rect key="frame" x="51" y="269" width="219" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,7 +145,7 @@
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" maximumZoomScale="2" keyboardDismissMode="interactive" id="7sn-BM-WZU" userLabel="Description Box">
-                                        <rect key="frame" x="20" y="336" width="280" height="161"/>
+                                        <rect key="frame" x="20" y="349" width="280" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -152,40 +156,46 @@
                                         </connections>
                                     </textView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe The Idea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="utG-tm-Exs" userLabel="Describe Label">
-                                        <rect key="frame" x="93" y="307" width="135" height="21"/>
+                                        <rect key="frame" x="93" y="320" width="135" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                        <color key="textColor" red="0.21176470589999999" green="0.61960784310000006" blue="0.91372549020000005" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tPw-2v-tvf" userLabel="Title Label">
-                                        <rect key="frame" x="105" y="232" width="110" height="21"/>
+                                        <rect key="frame" x="105" y="240" width="110" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                        <color key="textColor" red="0.21176470589999999" green="0.61960784310000006" blue="0.91372549020000005" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jjb-7l-ZEj" userLabel="Stash It Button">
-                                        <rect key="frame" x="123" y="513.5" width="75" height="43"/>
+                                        <rect key="frame" x="114" y="511" width="93" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" image="StashIt2.png">
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="Stash it.">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="saveIdea:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="Cf8-Hp-XRI"/>
+                                            <action selector="saveIdea:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="8zN-CQ-Ct5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rom-7k-jvB" userLabel="Back Button">
-                                        <rect key="frame" x="20" y="109" width="25" height="25"/>
+                                        <rect key="frame" x="2" y="93" width="45" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="left_arrow.png">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="backButton:" destination="S6b-Mb-lq3" eventType="touchUpInside" id="JIA-ER-BpH"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_left.png" id="eQ5-pM-WRj" userLabel="Right Arrow">
+                                        <rect key="frame" x="14" y="105" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -194,6 +204,7 @@
                     <connections>
                         <outlet property="appDescription" destination="7sn-BM-WZU" id="7jW-hl-d9O"/>
                         <outlet property="selectedCategoryIcon" destination="bJl-2b-a4Q" id="QBU-Tw-Ilc"/>
+                        <outlet property="stashButton" destination="Jjb-7l-ZEj" id="jo4-Ji-Hby"/>
                         <outlet property="workingTitle" destination="DHE-1w-8iC" id="DXE-8K-8Jg"/>
                     </connections>
                 </viewController>
@@ -210,11 +221,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="d3v-gF-8lV" userLabel="Music ">
-                                <rect key="frame" x="19" y="108" width="64" height="64"/>
+                                <rect key="frame" x="16" y="100" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <state key="normal" image="Music_Icon.png">
+                                <state key="normal" image="music-icon">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -225,9 +236,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zB3-0I-Cnk" userLabel="Travel">
-                                <rect key="frame" x="92" y="108" width="64" height="64"/>
+                                <rect key="frame" x="89" y="100" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Travel_Icon.png">
+                                <state key="normal" title="Button" image="travel-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -235,9 +246,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aT5-Lf-deW" userLabel="Photography">
-                                <rect key="frame" x="164" y="108" width="64" height="64"/>
+                                <rect key="frame" x="161" y="100" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Photography_Icon.png">
+                                <state key="normal" image="camera-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -245,9 +256,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xoo-Jl-Ypn" userLabel="Lifestyle">
-                                <rect key="frame" x="236" y="108" width="64" height="64"/>
+                                <rect key="frame" x="233" y="100" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Lifestyle_Icon.png">
+                                <state key="normal" image="lifestyle-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -255,9 +266,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1xz-Zf-YVc" userLabel="Reference">
-                                <rect key="frame" x="19" y="180" width="64" height="64"/>
+                                <rect key="frame" x="16" y="172" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Reference_Icon.png">
+                                <state key="normal" title="Button" image="resource-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -265,9 +276,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QDi-f0-MjB" userLabel="Games">
-                                <rect key="frame" x="92" y="180" width="64" height="64"/>
+                                <rect key="frame" x="89" y="172" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Games_Icon.png">
+                                <state key="normal" image="game-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -275,9 +286,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cuq-A2-e8b" userLabel="Entertainment">
-                                <rect key="frame" x="164" y="180" width="64" height="64"/>
+                                <rect key="frame" x="161" y="172" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Entertainment_Icon.png">
+                                <state key="normal" image="entertainment-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -285,9 +296,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0k-85-f4x" userLabel="Productivity">
-                                <rect key="frame" x="236" y="180" width="64" height="64"/>
+                                <rect key="frame" x="233" y="172" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Productivity_Icon.png">
+                                <state key="normal" image="productivity-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -295,19 +306,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I2G-Kq-ozB" userLabel="Finance">
-                                <rect key="frame" x="19" y="252" width="64" height="64"/>
+                                <rect key="frame" x="16" y="244" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Finance_Icon.png">
+                                <state key="normal" title="Button" image="finacne-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="hover-finance-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="wBv-KF-i87"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qWm-mR-D6a" userLabel="Food and Drink">
-                                <rect key="frame" x="92" y="252" width="64" height="64"/>
+                                <rect key="frame" x="89" y="244" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="FoodAndDrinkIcon.png">
+                                <state key="normal" image="eat-and-drink-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -315,9 +327,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dan-Iw-Sxj" userLabel="Fitness">
-                                <rect key="frame" x="164" y="252" width="64" height="64"/>
+                                <rect key="frame" x="161" y="244" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Fitness_Icon.png">
+                                <state key="normal" image="fitness-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -325,9 +337,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GqH-Jr-KVU" userLabel="Weather">
-                                <rect key="frame" x="236" y="252" width="64" height="64"/>
+                                <rect key="frame" x="233" y="244" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Weather.png">
+                                <state key="normal" image="weather-icon">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -336,19 +348,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Yw-5r-rJP" userLabel="Medical">
-                                <rect key="frame" x="19" y="324" width="64" height="64"/>
+                                <rect key="frame" x="16" y="316" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Medical_Icon.png">
+                                <state key="normal" title="Button" image="health-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="hover-health-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="29V-9g-ngA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NL9-oa-XDF" userLabel="Utility">
-                                <rect key="frame" x="92" y="324" width="64" height="64"/>
+                                <rect key="frame" x="89" y="316" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Utility_Icon.png">
+                                <state key="normal" title="Button" image="utility-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -356,9 +369,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="joY-dX-whj" userLabel="Social Networking">
-                                <rect key="frame" x="164" y="324" width="64" height="64"/>
+                                <rect key="frame" x="161" y="316" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="SocialNetworking_Icon.png">
+                                <state key="normal" image="social-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -366,9 +379,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ms8-uv-Qw1" userLabel="Navigation">
-                                <rect key="frame" x="236" y="324" width="64" height="64"/>
+                                <rect key="frame" x="233" y="316" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Navigation_Icon.png">
+                                <state key="normal" image="mapping-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -376,9 +389,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IfG-n1-sdJ" userLabel="Education ">
-                                <rect key="frame" x="19" y="396" width="64" height="64"/>
+                                <rect key="frame" x="16" y="388" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Education_Icon.png">
+                                <state key="normal" title="Button" image="education-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -386,9 +399,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vVq-1Q-xqA" userLabel="News">
-                                <rect key="frame" x="92" y="396" width="64" height="64"/>
+                                <rect key="frame" x="89" y="388" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="News_Icon.png">
+                                <state key="normal" image="news-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -396,9 +409,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xf3-Ce-iNR" userLabel="Sports">
-                                <rect key="frame" x="164" y="396" width="64" height="64"/>
+                                <rect key="frame" x="161" y="388" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Sports_Icon.png">
+                                <state key="normal" image="sports-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -406,9 +419,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mq3-e3-mao" userLabel="Business">
-                                <rect key="frame" x="236" y="396" width="64" height="64"/>
+                                <rect key="frame" x="233" y="388" width="72" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Business_Icon.png">
+                                <state key="normal" image="biz-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -416,9 +429,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Abz-nL-7GP" userLabel="Left Arrow Button">
-                                <rect key="frame" x="22.5" y="21" width="25" height="20"/>
+                                <rect key="frame" x="6" y="5" width="54" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="left_arrow.png">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -426,12 +441,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick an App Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RRl-Od-2UW">
-                                <rect key="frame" x="60" y="51" width="200" height="42"/>
+                                <rect key="frame" x="74" y="39" width="173" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_left.png" id="b8C-za-aRI">
+                                <rect key="frame" x="23" y="15" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -451,52 +470,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
-                                <rect key="frame" x="20" y="37" width="280" height="405"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.21176470588235294" green="0.61960784313725492" blue="0.9137254901960784" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stash." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5dr-eC-Wou" userLabel="App Name">
-                                <rect key="frame" x="50" y="172.5" width="220" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Education_Icon.png" id="CxB-W7-Hqp" userLabel="App Icon">
-                                <rect key="frame" x="110" y="55" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="C2q-UO-eMI">
-                                <rect key="frame" x="50" y="230" width="220" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbm-kg-PN5">
-                                <rect key="frame" x="279" y="0.0" width="41" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButton:" destination="yWS-fc-btZ" eventType="touchUpInside" id="Uuw-EX-eYu"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="0xY-Iv-lxM" userLabel="Right Arrow Image">
-                                <rect key="frame" x="293" y="10" width="18" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Y5e-9c-0O3" userLabel="Keyboard Avoiding Scroll View" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="-88" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <view alpha="0.59999999999999998" contentMode="scaleToFill" id="LfZ-xY-kU5" userLabel="Color Bar">
+                                        <rect key="frame" x="20" y="116" width="280" height="432"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.054901960784313725" green="0.38823529411764707" blue="0.47843137254901957" alpha="0.59999999999999998" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CxB-W7-Hqp" userLabel="App Icon">
+                                        <rect key="frame" x="100" y="125" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="C2q-UO-eMI">
+                                        <rect key="frame" x="50" y="298" width="220" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbm-kg-PN5" userLabel="Transparent Button">
+                                        <rect key="frame" x="270" y="88" width="49" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButton:" destination="yWS-fc-btZ" eventType="touchUpInside" id="Uuw-EX-eYu"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="iTi-JE-4h8" userLabel="Right Arrow">
+                                        <rect key="frame" x="290" y="94" width="22" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="13" id="jkL-ea-8GI">
+                                        <rect key="frame" x="49" y="255" width="222" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dq5-1Z-32h">
+                                        <rect key="frame" x="121" y="508" width="77" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="e d i t">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editIdea:" destination="yWS-fc-btZ" eventType="touchUpInside" id="hQq-Wq-Qyd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="appDescription" destination="C2q-UO-eMI" id="b19-lK-GFj"/>
                         <outlet property="appIcon" destination="CxB-W7-Hqp" id="0uD-a1-D8K"/>
-                        <outlet property="appName" destination="5dr-eC-Wou" id="372-FW-spn"/>
+                        <outlet property="appName" destination="jkL-ea-8GI" id="J1E-2O-4Df"/>
                         <outlet property="blueView" destination="LfZ-xY-kU5" id="ekh-vG-Sue"/>
+                        <outlet property="editButton" destination="Dq5-1Z-32h" id="chp-QW-rMo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9q-3g-qe9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -512,7 +552,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="EXH-57-TpY">
-                                <rect key="frame" x="0.0" y="0.0" width="327" height="480"/>
+                                <rect key="frame" x="0.0" y="59" width="327" height="421"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -520,11 +560,11 @@
                                     <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="60" maxX="20" maxY="20"/>
+                                    <inset key="sectionInset" minX="20" minY="40" maxX="20" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CIC-el-LKU" customClass="TPBrowseIdeasCell">
-                                        <rect key="frame" x="20" y="60" width="80" height="80"/>
+                                        <rect key="frame" x="124" y="40" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -543,33 +583,69 @@
                                             <outlet property="iconImage" destination="3Ji-Cv-ClC" id="qUJ-I8-XAr"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.20000000000000001" contentMode="center" reuseIdentifier="titleCell" id="dpW-uo-KUk" customClass="TPBrowseIdeasCell">
+                                        <rect key="frame" x="24" y="130" width="280" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cE6-Qj-n1x">
+                                                    <rect key="frame" x="7.5" y="0.0" width="260" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <size key="customSize" width="280" height="40"/>
+                                        <connections>
+                                            <outlet property="titeCellLabel" destination="cE6-Qj-n1x" id="uaS-NT-0PS"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="7qI-6S-Ph6" id="kJY-yI-eET"/>
                                     <outlet property="delegate" destination="7qI-6S-Ph6" id="BBV-hj-vcA"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="Z3G-8z-2rm">
-                                <rect key="frame" x="290" y="16" width="20" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5lh-4x-Ifr" userLabel="Back Button">
-                                <rect key="frame" x="273" y="4" width="47" height="48"/>
+                                <rect key="frame" x="264" y="9" width="51" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="7qI-6S-Ph6" eventType="touchUpInside" id="0K9-k1-HB2"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow.png" id="XBa-Ft-UvV" userLabel="Right Arrow">
+                                <rect key="frame" x="278" y="20" width="21" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eTf-PB-rY4">
+                                <rect key="frame" x="99" y="18" width="123" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Icon"/>
+                                    <segment title="Title"/>
+                                </segments>
+                                <color key="tintColor" red="0.086274512110000007" green="0.49411767719999999" blue="0.55277714420000001" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="chnageBrowseView:" destination="7qI-6S-Ph6" eventType="valueChanged" id="DBw-Iz-6Q9"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="collectionView" destination="EXH-57-TpY" id="52b-TK-TT0"/>
+                        <outlet property="toggleView" destination="eTf-PB-rY4" id="Y3q-jM-RTH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8a-UO-smm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -578,34 +654,35 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Business_Icon.png" width="134" height="134"/>
-        <image name="Education_Icon.png" width="134" height="134"/>
-        <image name="Entertainment_Icon.png" width="134" height="134"/>
-        <image name="Finance_Icon.png" width="134" height="134"/>
-        <image name="Fitness_Icon.png" width="134" height="134"/>
-        <image name="FoodAndDrinkIcon.png" width="134" height="134"/>
-        <image name="Games_Icon.png" width="134" height="134"/>
         <image name="GlowAddButton.png" width="1042" height="1042"/>
         <image name="Glowing_Browse_Button.png" width="1042" height="1042"/>
-        <image name="Lifestyle_Icon.png" width="134" height="134"/>
-        <image name="Medical_Icon.png" width="134" height="134"/>
-        <image name="Music_Icon.png" width="134" height="134"/>
-        <image name="Navigation_Icon.png" width="134" height="134"/>
-        <image name="News_Icon.png" width="134" height="134"/>
-        <image name="Photography_Icon.png" width="134" height="134"/>
-        <image name="Productivity_Icon.png" width="134" height="134"/>
-        <image name="Reference_Icon.png" width="134" height="134"/>
-        <image name="SocialNetworking_Icon.png" width="134" height="134"/>
-        <image name="Sports_Icon.png" width="134" height="134"/>
-        <image name="StashIt2.png" width="132" height="78"/>
         <image name="Stash_Logo_And_Tagline.png" width="1333" height="560"/>
-        <image name="Travel_Icon.png" width="134" height="134"/>
         <image name="Update_Add_Button.png" width="200" height="200"/>
         <image name="Update_Browse_Button.png" width="200" height="200"/>
-        <image name="Utility_Icon.png" width="134" height="134"/>
-        <image name="Weather.png" width="134" height="134"/>
-        <image name="left_arrow.png" width="328" height="230"/>
+        <image name="arrow_left.png" width="512" height="512"/>
+        <image name="biz-icon" width="260" height="260"/>
+        <image name="camera-icon" width="260" height="260"/>
+        <image name="eat-and-drink-icon" width="260" height="260"/>
+        <image name="education-icon" width="260" height="260"/>
+        <image name="entertainment-icon" width="260" height="260"/>
+        <image name="finacne-icon" width="260" height="260"/>
+        <image name="fitness-icon" width="260" height="260"/>
+        <image name="game-icon" width="260" height="260"/>
+        <image name="health-icon" width="260" height="260"/>
+        <image name="hover-finance-icon.png" width="260" height="260"/>
+        <image name="hover-health-icon.png" width="260" height="260"/>
+        <image name="lifestyle-icon" width="260" height="260"/>
+        <image name="mapping-icon" width="260" height="260"/>
+        <image name="music-icon" width="260" height="260"/>
+        <image name="news-icon" width="260" height="260"/>
+        <image name="productivity-icon" width="260" height="260"/>
+        <image name="resource-icon" width="260" height="260"/>
         <image name="right_arrow.png" width="512" height="512"/>
+        <image name="social-icon" width="260" height="260"/>
+        <image name="sports-icon" width="260" height="260"/>
+        <image name="travel-icon" width="260" height="260"/>
+        <image name="utility-icon" width="260" height="260"/>
+        <image name="weather-icon" width="260" height="260"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

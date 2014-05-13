@@ -315,7 +315,6 @@
                                 <state key="normal" image="productivity-icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" image="hover-productivity-icon.png"/>
                                 <state key="highlighted" image="hover-productivity-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="9XU-Vp-0ih"/>
@@ -374,7 +373,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="selected" image="hover-health-icon.png"/>
-                                <state key="highlighted" image="hover-health-icon.png"/>
                                 <connections>
                                     <action selector="categorySelected:" destination="v7P-z5-1Sn" eventType="touchUpInside" id="29V-9g-ngA"/>
                                 </connections>

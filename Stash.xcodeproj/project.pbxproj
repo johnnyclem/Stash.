@@ -49,7 +49,7 @@
 		D7ECF5BB1912B2E100FF7DE6 /* TPIdeaController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5BA1912B2E100FF7DE6 /* TPIdeaController.m */; };
 		D7ECF5C01912CE3200FF7DE6 /* TPBrowseIdeasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ECF5BF1912CE3200FF7DE6 /* TPBrowseIdeasVC.m */; };
 		D7F0073A1911EC1100EB0C62 /* SWParallaxScrollView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7F007391911EC1100EB0C62 /* SWParallaxScrollView.mm */; };
-		D7FE3011191985E900A4EA18 /* SmallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FE3010191985E900A4EA18 /* SmallScreen.storyboard */; };
+		D7F22F9C1921E48E00A0774B /* Small.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F22F9B1921E48E00A0774B /* Small.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +124,7 @@
 		D7ECF5BF1912CE3200FF7DE6 /* TPBrowseIdeasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBrowseIdeasVC.m; sourceTree = "<group>"; };
 		D7F007381911EC1100EB0C62 /* SWParallaxScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWParallaxScrollView.h; sourceTree = "<group>"; };
 		D7F007391911EC1100EB0C62 /* SWParallaxScrollView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SWParallaxScrollView.mm; sourceTree = "<group>"; };
-		D7FE3010191985E900A4EA18 /* SmallScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SmallScreen.storyboard; sourceTree = "<group>"; };
+		D7F22F9B1921E48E00A0774B /* Small.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Small.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,7 +338,7 @@
 		D7ECF5B11912B1EC00FF7DE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7FE3010191985E900A4EA18 /* SmallScreen.storyboard */,
+				D7F22F9B1921E48E00A0774B /* Small.storyboard */,
 				D7DFA67A19117FD2001AE811 /* Main.storyboard */,
 				D712B7641912E5780063B45B /* TPHomeVC.h */,
 				D712B7651912E5780063B45B /* TPHomeVC.m */,
@@ -473,7 +473,7 @@
 				D710C02319139C5600F6F372 /* Update_Add_Button.png in Resources */,
 				D787F86D191DFB5700110620 /* Stash_Logo_And_Tagline.png in Resources */,
 				D710C02419139C5600F6F372 /* Update_Browse_Button.png in Resources */,
-				D7FE3011191985E900A4EA18 /* SmallScreen.storyboard in Resources */,
+				D7F22F9C1921E48E00A0774B /* Small.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
