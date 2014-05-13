@@ -83,7 +83,17 @@
     self.appName.userInteractionEnabled = YES;
     self.appDescription.userInteractionEnabled = YES;
     self.appDescription.layer.borderColor = [[UIColor orangeColor] CGColor];
-    self.appDescription.layer.borderWidth= 3.0f;
+    [self.appDescription setBackgroundColor:[UIColor colorWithRed:0.840 green:0.570 blue:0.200 alpha:0.500]];
+    [self.appName setBackgroundColor:[UIColor colorWithRed:0.840 green:0.570 blue:0.200 alpha:0.500]];
+
+    self.appDescription.layer.borderWidth= 2.0f;
+    _appName.layer.borderWidth = 2.0f;
+    _appName.layer.borderColor = [[UIColor colorWithRed:0.84 green:0.57 blue:0.2 alpha:1] CGColor];
+    
+    
+    
+    
+    
     [self.editButton setTitle:@"d o n e" forState:UIControlStateNormal];
   }
   else
@@ -93,7 +103,17 @@
     self.appName.userInteractionEnabled = NO;
     self.appDescription.userInteractionEnabled = NO;
     self.appDescription.layer.borderColor = [[UIColor clearColor] CGColor];
-    self.appDescription.layer.borderWidth= 3.0f;
+    [self.appDescription setBackgroundColor:[UIColor clearColor]];
+    [self.appName setBackgroundColor:[UIColor clearColor]];
+
+
+    self.appDescription.layer.borderWidth= 2.0f;
+    _appName.layer.borderWidth = 2.0f;
+    _appName.layer.borderColor = [[UIColor clearColor] CGColor];
+    
+
+  
+    
     self.ideaController.mySelectedIdea.workingTitle = self.appName.text;
     self.ideaController.mySelectedIdea.appDescription = self.appDescription.text;
     
